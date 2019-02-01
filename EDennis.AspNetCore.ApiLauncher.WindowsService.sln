@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.AspNetCore.ApiLauncher", "EDennis.AspNetCore.ApiLauncher\EDennis.AspNetCore.ApiLauncher.csproj", "{DD50C32F-02E5-4A98-B176-E5E0A604AB23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.AspNetCore.ApiLauncher.WindowsService", "EDennis.AspNetCore.ApiLauncher.WindowsService\EDennis.AspNetCore.ApiLauncher.WindowsService.csproj", "{DD50C32F-02E5-4A98-B176-E5E0A604AB23}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.Api001", "EDennis.Samples.Api001\EDennis.Samples.Api001.csproj", "{1546B8B3-9DDC-4206-88C1-C0E8814FA1AF}"
 EndProject

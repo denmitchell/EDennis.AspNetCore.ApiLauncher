@@ -5,18 +5,25 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Management;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace EDennis.AspNetCore.ApiLauncher {
+
     /// <summary>
     /// Kills all dotnet processes in order to free up
-    /// ports/resources.
+    /// ports/resources.  This class is used as a fail-safe
+    /// means of ensuring that ports are released when they
+    /// are no longer needed by the process that is using them.
     /// </summary>
     public class DotNetProcessTerminator {
 
         private readonly ILogger _logger;
 
+        /// <summary>
+        /// Instantiates a new DotNetProcessTerminator objet
+        /// with the provided ILogger
+        /// </summary>
+        /// <param name="logger"></param>
         public DotNetProcessTerminator(ILogger<DotNetProcessTerminator> logger) {
             _logger = logger;
         }
@@ -30,12 +37,18 @@ namespace EDennis.AspNetCore.ApiLauncher {
         /// <param name="ports">the ports to kill</param>
         /// <returns></returns>
         public List<PortProcess> KillDotNetProcesses(int[] ports) {
+            //get all dotnet.exe processes and their associated ports
             var portProcesses = GetDotNetPortProcesses();
+            //limit the list to those that are associated with one of the designated ports
             var targetProcesses = portProcesses.Where(p => ports.Contains(p.PortNumber));
+
+            //iterate over all target processes and kill them and their child processes
             foreach (var targetProcess in targetProcesses) {
                 _logger.LogInformation($"Killing {targetProcess.ProcessId} using port {targetProcess.PortNumber}");
                 KillProcessAndChildren(targetProcess.ProcessId);
             }
+
+            //return those process that were killed
             return portProcesses;
         }
 
@@ -46,9 +59,11 @@ namespace EDennis.AspNetCore.ApiLauncher {
         /// <returns>list of processes/ports</returns>
         public List<PortProcess> GetDotNetPortProcesses() {
 
+            //initialize a list
             var portProcesses = new List<PortProcess>();
 
             try {
+                //use netstat.exe to get process/port info
                 using (Process p = new Process()) {
 
                     ProcessStartInfo ps = new ProcessStartInfo();
@@ -73,11 +88,11 @@ namespace EDennis.AspNetCore.ApiLauncher {
                         // Command Errored. Handle Here If Need Be
                     }
 
-                    //Get The Rows
+                    //get the rows
                     string[] rows = Regex.Split(content, "\r\n");
                     foreach (string row in rows) {
 
-                        //Split the row into tokens
+                        //split the row into tokens
                         string[] tokens = Regex.Split(row, "\\s+");
                         if (tokens.Length > 4 && tokens[1].Equals("TCP")) {
                             string localAddress = Regex.Replace(tokens[2], @"\[(.*?)\]", "1.1.1.1");
@@ -112,7 +127,8 @@ namespace EDennis.AspNetCore.ApiLauncher {
 
         // <summary>
         /// Kill a process, and all of its children, grandchildren, etc.
-        /// From https://stackoverflow.com/a/10402906.
+        /// From https://stackoverflow.com/a/10402906.  Note that this
+        /// method is recursive; so, it is best used sparingly.
         /// 
         /// Dependencies: System.Management
         /// </summary>

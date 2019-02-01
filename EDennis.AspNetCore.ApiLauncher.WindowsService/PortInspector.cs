@@ -45,6 +45,7 @@ namespace EDennis.AspNetCore.ApiLauncher {
 
             portArray.Sort();
 
+            //build the list of available ports
             for (int i = startingPort; i < UInt16.MaxValue; i++)
                 if (!portArray.Contains(i)) {
                     availablePorts.Add(i);

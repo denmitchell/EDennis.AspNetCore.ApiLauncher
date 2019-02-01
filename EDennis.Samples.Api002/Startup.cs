@@ -30,8 +30,8 @@ namespace EDennis.Samples.Api002 {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Map("/ping",
-              ping => ping.Run(async context => await context.Response.WriteAsync("ok")));
+            //app.Map("/ping",
+            //  ping => ping.Run(async context => await context.Response.WriteAsync("ok")));
 
             app.UseMvc();
         }

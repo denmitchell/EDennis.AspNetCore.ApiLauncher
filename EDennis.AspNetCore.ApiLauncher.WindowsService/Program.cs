@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
 using System;
@@ -22,16 +21,22 @@ namespace EDennis.AspNetCore.ApiLauncher {
 
             var appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 
+            var configBuilder = new ConfigurationBuilder()
+                        .SetBasePath(Directory.GetCurrentDirectory())
+                        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                        .AddEnvironmentVariables();
+            var Configuration = configBuilder.Build();
+
+
+            //configure logging
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                .Enrich.FromLogContext()
-                .WriteTo.RollingFile("c:\\Temp\\apiLauncherLog-{Date}.txt")
-                .WriteTo.Console()
+                .ReadFrom.Configuration(Configuration)
                 .CreateLogger();
 
+            //handle windows service
             var isService = !(Debugger.IsAttached || args.Contains("--console"));
-
             if (isService) {
                 var pathToExe = Process.GetCurrentProcess().MainModule.FileName;
                 var pathToContentRoot = Path.GetDirectoryName(pathToExe);
@@ -46,6 +51,7 @@ namespace EDennis.AspNetCore.ApiLauncher {
                         config.AddCommandLine(args);
                     }
                 })
+                //add required services
                 .ConfigureServices((hostContext, services) => {
                     services.AddOptions();
                     services.Configure<MqttConfig>(hostContext.Configuration.GetSection("MQTT"));
@@ -54,16 +60,16 @@ namespace EDennis.AspNetCore.ApiLauncher {
                     services.AddSingleton<Launcher>();
                 })
                 .ConfigureLogging((hostingContext, logging) => {
-                    //logging.AddConsole();
                     logging.AddSerilog();
                 });
+
             
             builder.UseSerilog();
 
             if (isService) {
-                await builder.RunAsServiceAsync();
+                await builder.RunAsServiceAsync(); //run as Windows service
             } else {
-                await builder.RunConsoleAsync();
+                await builder.RunConsoleAsync(); //run as console app
             }
 
         }

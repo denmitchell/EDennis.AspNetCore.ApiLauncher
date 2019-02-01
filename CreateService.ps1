@@ -7,7 +7,7 @@
 ######################################################
 
 #define file/path variables
-$api = "EDennis.AspNetCore.ApiLauncher" 
+$api = "EDennis.AspNetCore.ApiLauncher.WindowsService" 
 $svcDir = "$ENV:UserProfile\source\services"
 $apiSvcDir = "$svcDir\$api"
 $apiProjDir = "$ENV:UserProfile\source\repos\$api\$api"
@@ -35,7 +35,7 @@ if($service -ne $null){
 $Credential = $host.ui.PromptForCredential("Need credentials", "Please enter your user name and password.", "", "NetBiosUserName")
 
 #create the service
-New-Service -Name "ApiLauncherService" -BinaryPathName "$apiExePath" -Credential $Credential -DisplayName "ApiLauncher Service" -StartupType Automatic -Description "Launches Apis via MQTT messages." -DependsOn NetLogon
+New-Service -Name "ApiLauncherService" -BinaryPathName "$apiExePath" -Credential $Credential -DisplayName "ApiLauncher Service" -StartupType Automatic -Description "Launches Apis via MQTT messages."
 
 #start the service
 Start-Service -Name "ApiLauncherService"

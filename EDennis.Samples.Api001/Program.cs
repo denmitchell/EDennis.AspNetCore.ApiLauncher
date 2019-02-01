@@ -16,6 +16,9 @@ namespace EDennis.Samples.Api001 {
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration(options => {
+                    options.AddCommandLine(args);
+                })
                 .UseStartup<Startup>();
     }
 }
