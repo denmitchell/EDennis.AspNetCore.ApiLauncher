@@ -1,0 +1,242 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Embedded/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "EDennis.Samples.LocationApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "EDennis.Samples.SharedModel": "1.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "3.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EDennis.Samples.LocationApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EDennis.Samples.LocationApi.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "EDennis.Samples.SharedModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/EDennis.Samples.SharedModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EDennis.Samples.SharedModel.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "EDennis.Samples.TimeApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "EDennis.Samples.SharedModel": "1.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "3.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EDennis.Samples.TimeApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EDennis.Samples.TimeApi.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
+      "sha512": "kahEeykb6FyQytoZNNXuz74X85B4weIEt8Kd+0klK48bkXDWOIHAOvNjlGsPMcS9CL935Te8QGQS83JqCbpdHA==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.3.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Embedded/3.0.0": {
+      "sha512": "3NxhMXmFlL6UHuXssp8qHGkHifYty0jXgzx74Xkz2d/MUediXvd+3uIux1kswGphQa3FDOHvXtINX57vkzTmrg==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.embedded/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.props",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "microsoft.extensions.fileproviders.embedded.3.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.embedded.nuspec",
+        "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/3.0.0": {
+      "sha512": "6gwewTbmOh+ZVBicVkL1XRp79sx4O7BVY6Yy+7OYZdwn3pyOKe9lOam+3gXJ3TZMjhJZdV0Ub8hxHt2vkrmN5Q==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
+      ]
+    },
+    "EDennis.Samples.LocationApi/1.0.0": {
+      "type": "project",
+      "path": "../EDennis.Samples.LocationApi/EDennis.Samples.LocationApi.csproj",
+      "msbuildProject": "../EDennis.Samples.LocationApi/EDennis.Samples.LocationApi.csproj"
+    },
+    "EDennis.Samples.SharedModel/1.0.0": {
+      "type": "project",
+      "path": "../EDennis.Samples.SharedModel/EDennis.Samples.SharedModel.csproj",
+      "msbuildProject": "../EDennis.Samples.SharedModel/EDennis.Samples.SharedModel.csproj"
+    },
+    "EDennis.Samples.TimeApi/1.0.0": {
+      "type": "project",
+      "path": "../EDennis.Samples.TimeApi/EDennis.Samples.TimeApi.csproj",
+      "msbuildProject": "../EDennis.Samples.TimeApi/EDennis.Samples.TimeApi.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "EDennis.Samples.LocationApi >= 1.0.0",
+      "EDennis.Samples.TimeApi >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\denmi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi.Launcher\\EDennis.Samples.LocationApi.Launcher.csproj",
+      "projectName": "EDennis.Samples.LocationApi.Launcher",
+      "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi.Launcher\\EDennis.Samples.LocationApi.Launcher.csproj",
+      "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi.Launcher\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
+        "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\denmi\\source\\repos\\NuGet": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj": {
+              "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj"
+            },
+            "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj": {
+              "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
