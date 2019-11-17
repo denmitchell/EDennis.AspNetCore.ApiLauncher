@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using EDennis.Samples.SharedModel;
+using EDennis.Samples.Utils;
 
 namespace EDennis.Samples.TimeApi.Tester {
     public class SampleUnitTest : IClassFixture<LauncherFixture> {
@@ -20,15 +21,13 @@ namespace EDennis.Samples.TimeApi.Tester {
 
         [Theory]
         [MemberData(nameof(Data))]
-        public void MockTest(int idx) {
-            var response = _client.GetAsync($"{_client.BaseAddress}Time").Result;
-            var content = response.Content.ReadAsStringAsync().Result;
-            var time = JsonSerializer.Deserialize<Time>(content,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        public void GetTime(int idx) {
+            var result = _client.Get<Time>($"{_client.BaseAddress}Time");
+            var time = (Time)result.Value;
             _output.WriteLine($"{idx}: " + JsonSerializer.Serialize(time, new JsonSerializerOptions { WriteIndented = true }));
         }
 
         public static IEnumerable<object[]> Data =>
-                Enumerable.Range(1, 10).Select(i => new object[] { (object) i }).ToArray();
+                Enumerable.Range(1, 10).Select(i => new object[] { i }).ToArray();
     }
 }

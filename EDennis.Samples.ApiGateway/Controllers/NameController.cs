@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
-using System.Threading.Tasks;
-using EDennis.Samples.NameApi;
 using EDennis.Samples.SharedModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

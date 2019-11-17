@@ -1,4 +1,4 @@
-﻿using System;
+﻿using EDennis.Samples.Utils;
 using System.Threading.Tasks;
 using L = EDennis.Samples.LocationApi;
 using T = EDennis.Samples.TimeApi;
@@ -9,7 +9,7 @@ namespace EDennis.Samples.LocationApi.Launcher {
         public static void Main(string[] args) {
             Task.Run(() => { T.Program.RunAsync(args); });
             Task.Run(() => { L.Program.RunAsync(args); });
-            Console.ReadKey();
+            LauncherUtils.Block(args);
         }
 
     }

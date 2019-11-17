@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EDennis.Samples.QuoteApi\EDennis.Samples.QuoteApi.csproj" />
     <ProjectReference Include="..\EDennis.Samples.TimeApi\EDennis.Samples.TimeApi.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.Utils\EDennis.Samples.Utils.csproj" />
   </ItemGroup>
 
 </Project>

@@ -38,3 +38,6 @@ C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeA
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.TimeApi.Launcher.csproj.CopyComplete
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.TimeApi.Launcher.dll
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.TimeApi.Launcher.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi.Launcher\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi.Launcher\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi.Launcher\bin\Debug\netcoreapp3.0\Flurl.dll

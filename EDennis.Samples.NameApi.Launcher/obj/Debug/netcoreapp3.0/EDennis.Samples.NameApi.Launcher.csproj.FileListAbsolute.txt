@@ -42,3 +42,6 @@ C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameA
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.NameApi.Launcher.csproj.CopyComplete
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.NameApi.Launcher.dll
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.NameApi.Launcher.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi.Launcher\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi.Launcher\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi.Launcher\bin\Debug\netcoreapp3.0\Flurl.dll

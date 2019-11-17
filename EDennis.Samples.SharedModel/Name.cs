@@ -1,7 +1,7 @@
 using EDennis.Samples.SharedModel;
 using System;
 
-namespace EDennis.Samples.NameApi {
+namespace EDennis.Samples.SharedModel {
     public class Name {
         public int Id { get; set; }
         public string First { get; set; }

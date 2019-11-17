@@ -9,10 +9,19 @@
       "EDennis.Samples.NameApi.Launcher/1.0.0": {
         "dependencies": {
           "EDennis.Samples.NameApi": "1.0.0",
-          "EDennis.Samples.TimeApi": "1.0.0"
+          "EDennis.Samples.TimeApi": "1.0.0",
+          "EDennis.Samples.Utils": "1.0.0"
         },
         "runtime": {
           "EDennis.Samples.NameApi.Launcher.dll": {}
+        }
+      },
+      "Flurl/2.8.2": {
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "assemblyVersion": "2.8.2.0",
+            "fileVersion": "2.8.2.0"
+          }
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
@@ -29,6 +38,7 @@
       "EDennis.Samples.NameApi/1.0.0": {
         "dependencies": {
           "EDennis.Samples.SharedModel": "1.0.0",
+          "EDennis.Samples.Utils": "1.0.0",
           "Microsoft.Extensions.FileProviders.Embedded": "3.0.0"
         },
         "runtime": {
@@ -43,10 +53,20 @@
       "EDennis.Samples.TimeApi/1.0.0": {
         "dependencies": {
           "EDennis.Samples.SharedModel": "1.0.0",
+          "EDennis.Samples.Utils": "1.0.0",
           "Microsoft.Extensions.FileProviders.Embedded": "3.0.0"
         },
         "runtime": {
           "EDennis.Samples.TimeApi.dll": {}
+        }
+      },
+      "EDennis.Samples.Utils/1.0.0": {
+        "dependencies": {
+          "EDennis.Samples.SharedModel": "1.0.0",
+          "Flurl": "2.8.2"
+        },
+        "runtime": {
+          "EDennis.Samples.Utils.dll": {}
         }
       }
     }
@@ -56,6 +76,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Flurl/2.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3VEYAqkGTGHgla4xuyEB4d8XGLeMX2k05C4WfI7YmKQHsL7RhoGu3L6h1xsKKTPFWjEL13p09XOIGwD1pQ86dg==",
+      "path": "flurl/2.8.2",
+      "hashPath": "flurl.2.8.2.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
       "type": "package",
@@ -89,6 +116,11 @@
       "sha512": ""
     },
     "EDennis.Samples.TimeApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EDennis.Samples.Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

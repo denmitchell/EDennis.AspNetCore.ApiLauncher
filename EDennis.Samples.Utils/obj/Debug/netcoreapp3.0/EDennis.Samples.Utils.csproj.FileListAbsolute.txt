@@ -1,0 +1,15 @@
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.deps.json
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\bin\Debug\netcoreapp3.0\EDennis.Samples.SharedModel.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\bin\Debug\netcoreapp3.0\EDennis.Samples.SharedModel.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\EDennis.Samples.Utils.csprojAssemblyReference.cache
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\staticwebassets\EDennis.Samples.Utils.StaticWebAssets.Manifest.cache
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\staticwebassets\EDennis.Samples.Utils.StaticWebAssets.xml
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\EDennis.Samples.Utils.AssemblyInfoInputs.cache
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\EDennis.Samples.Utils.AssemblyInfo.cs
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\EDennis.Samples.Utils.RazorTargetAssemblyInfo.cache
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\EDennis.Samples.Utils.csproj.CopyComplete
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Utils\obj\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb

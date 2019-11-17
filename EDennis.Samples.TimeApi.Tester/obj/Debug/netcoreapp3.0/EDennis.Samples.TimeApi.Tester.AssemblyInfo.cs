@@ -11,14 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EDennis.Samples.SharedModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nul" +
-    "l", "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Shared" +
-    "Model", "EDennis.Samples.SharedModel.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EDennis.Samples.TimeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeAp" +
-    "i", "EDennis.Samples.TimeApi.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EDennis.Samples.TimeApi.Launcher, Version=1.0.0.0, Culture=neutral, PublicKeyToke" +
-    "n=null", "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeAp" +
-    "i.Launcher", "EDennis.Samples.TimeApi.Launcher.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EDennis.Samples.TimeApi.Tester")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

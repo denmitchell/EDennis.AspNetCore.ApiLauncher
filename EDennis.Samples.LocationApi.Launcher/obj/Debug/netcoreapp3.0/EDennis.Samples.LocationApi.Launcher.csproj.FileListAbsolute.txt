@@ -42,3 +42,6 @@ C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Locat
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.LocationApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.LocationApi.Launcher.csproj.CopyComplete
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.LocationApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.LocationApi.Launcher.dll
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.LocationApi.Launcher\obj\Debug\netcoreapp3.0\EDennis.Samples.LocationApi.Launcher.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.LocationApi.Launcher\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.LocationApi.Launcher\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.LocationApi.Launcher\bin\Debug\netcoreapp3.0\Flurl.dll

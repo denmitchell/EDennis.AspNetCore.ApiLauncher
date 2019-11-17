@@ -34,3 +34,5 @@ C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.Quote
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.QuoteApi\obj\Debug\netcoreapp3.0\EDennis.Samples.QuoteApi.csproj.CopyComplete
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.QuoteApi\obj\Debug\netcoreapp3.0\EDennis.Samples.QuoteApi.dll
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.QuoteApi\obj\Debug\netcoreapp3.0\EDennis.Samples.QuoteApi.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.QuoteApi\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.QuoteApi\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb

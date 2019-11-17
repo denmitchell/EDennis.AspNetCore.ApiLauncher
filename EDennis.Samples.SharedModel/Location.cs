@@ -1,7 +1,7 @@
 using EDennis.Samples.SharedModel;
 using System;
 
-namespace EDennis.Samples.LocationApi {
+namespace EDennis.Samples.SharedModel {
     public class Location {
         public int Id { get; set; }
 

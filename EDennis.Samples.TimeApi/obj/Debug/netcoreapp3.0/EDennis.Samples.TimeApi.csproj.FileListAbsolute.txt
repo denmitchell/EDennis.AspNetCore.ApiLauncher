@@ -34,3 +34,5 @@ C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeA
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi\obj\Debug\netcoreapp3.0\EDennis.Samples.TimeApi.csproj.CopyComplete
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi\obj\Debug\netcoreapp3.0\EDennis.Samples.TimeApi.dll
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi\obj\Debug\netcoreapp3.0\EDennis.Samples.TimeApi.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.TimeApi\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb

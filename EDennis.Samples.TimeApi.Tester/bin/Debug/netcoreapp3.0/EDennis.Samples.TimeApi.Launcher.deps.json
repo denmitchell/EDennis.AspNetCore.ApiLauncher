@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.0": {
       "EDennis.Samples.TimeApi.Launcher/1.0.0": {
         "dependencies": {
-          "EDennis.Samples.TimeApi": "1.0.0"
+          "EDennis.Samples.TimeApi": "1.0.0",
+          "EDennis.Samples.Utils": "1.0.0"
         },
         "runtime": {
           "EDennis.Samples.TimeApi.Launcher.dll": {}
@@ -33,10 +34,19 @@
       "EDennis.Samples.TimeApi/1.0.0": {
         "dependencies": {
           "EDennis.Samples.SharedModel": "1.0.0",
+          "EDennis.Samples.Utils": "1.0.0",
           "Microsoft.Extensions.FileProviders.Embedded": "3.0.0"
         },
         "runtime": {
           "EDennis.Samples.TimeApi.dll": {}
+        }
+      },
+      "EDennis.Samples.Utils/1.0.0": {
+        "dependencies": {
+          "EDennis.Samples.SharedModel": "1.0.0"
+        },
+        "runtime": {
+          "EDennis.Samples.Utils.dll": {}
         }
       }
     }
@@ -74,6 +84,11 @@
       "sha512": ""
     },
     "EDennis.Samples.TimeApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EDennis.Samples.Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

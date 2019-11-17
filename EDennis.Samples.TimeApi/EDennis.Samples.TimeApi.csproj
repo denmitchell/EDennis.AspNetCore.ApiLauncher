@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EDennis.Samples.SharedModel\EDennis.Samples.SharedModel.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.Utils\EDennis.Samples.Utils.csproj" />
   </ItemGroup>
 
 

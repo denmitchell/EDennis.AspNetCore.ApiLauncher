@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EDennis.Samples.Utils;
+using System;
 using System.Threading.Tasks;
 using G = EDennis.Samples.ApiGateway;
 using L = EDennis.Samples.LocationApi;
@@ -15,7 +16,7 @@ namespace EDennis.Samples.ApiGateway.Launcher {
             Task.Run(() => { N.Program.RunAsync(args); });
             Task.Run(() => { Q.Program.RunAsync(args); });
             Task.Run(() => { G.Program.RunAsync(args); });
-            Console.ReadKey();
+            LauncherUtils.Block(args);
         }
 
     }

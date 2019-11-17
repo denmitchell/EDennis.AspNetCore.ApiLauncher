@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "Flurl/2.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        }
+      },
       "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -55,10 +64,46 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "EDennis.Samples.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "EDennis.Samples.SharedModel": "1.0.0",
+          "Flurl": "2.8.2"
+        },
+        "compile": {
+          "bin/placeholder/EDennis.Samples.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EDennis.Samples.Utils.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
   "libraries": {
+    "Flurl/2.8.2": {
+      "sha512": "3VEYAqkGTGHgla4xuyEB4d8XGLeMX2k05C4WfI7YmKQHsL7RhoGu3L6h1xsKKTPFWjEL13p09XOIGwD1pQ86dg==",
+      "type": "package",
+      "path": "flurl/2.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.2.8.2.nupkg.sha512",
+        "flurl.nuspec",
+        "lib/net40/Flurl.dll",
+        "lib/net40/Flurl.xml",
+        "lib/netstandard1.0/Flurl.dll",
+        "lib/netstandard1.0/Flurl.xml",
+        "lib/netstandard1.3/Flurl.dll",
+        "lib/netstandard1.3/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
     "Microsoft.Extensions.FileProviders.Abstractions/3.0.0": {
       "sha512": "kahEeykb6FyQytoZNNXuz74X85B4weIEt8Kd+0klK48bkXDWOIHAOvNjlGsPMcS9CL935Te8QGQS83JqCbpdHA==",
       "type": "package",
@@ -113,11 +158,17 @@
       "type": "project",
       "path": "../EDennis.Samples.SharedModel/EDennis.Samples.SharedModel.csproj",
       "msbuildProject": "../EDennis.Samples.SharedModel/EDennis.Samples.SharedModel.csproj"
+    },
+    "EDennis.Samples.Utils/1.0.0": {
+      "type": "project",
+      "path": "../EDennis.Samples.Utils/EDennis.Samples.Utils.csproj",
+      "msbuildProject": "../EDennis.Samples.Utils/EDennis.Samples.Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "EDennis.Samples.SharedModel >= 1.0.0",
+      "EDennis.Samples.Utils >= 1.0.0",
       "Microsoft.Extensions.FileProviders.Embedded >= 3.0.0"
     ]
   },
@@ -160,6 +211,9 @@
           "projectReferences": {
             "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
               "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+            },
+            "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+              "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
             }
           }
         }

@@ -29,6 +29,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.TypicalScaf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.TimeApi.Tester", "EDennis.Samples.TimeApi.Tester\EDennis.Samples.TimeApi.Tester.csproj", "{5943BFEE-5BC5-4906-ABDE-E71A19DFE40F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.Utils", "EDennis.Samples.Utils\EDennis.Samples.Utils.csproj", "{8146588D-9635-451B-85DD-14853B6329A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.ApiGateway.Tester", "EDennis.Samples.ApiGateway.Tester\EDennis.Samples.ApiGateway.Tester.csproj", "{8915CC39-31B9-498F-BCA6-6216132237DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{5943BFEE-5BC5-4906-ABDE-E71A19DFE40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5943BFEE-5BC5-4906-ABDE-E71A19DFE40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5943BFEE-5BC5-4906-ABDE-E71A19DFE40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8146588D-9635-451B-85DD-14853B6329A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8146588D-9635-451B-85DD-14853B6329A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8146588D-9635-451B-85DD-14853B6329A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8146588D-9635-451B-85DD-14853B6329A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8915CC39-31B9-498F-BCA6-6216132237DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8915CC39-31B9-498F-BCA6-6216132237DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8915CC39-31B9-498F-BCA6-6216132237DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8915CC39-31B9-498F-BCA6-6216132237DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

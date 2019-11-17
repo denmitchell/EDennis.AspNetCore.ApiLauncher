@@ -34,3 +34,5 @@ C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameA
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi\obj\Debug\netcoreapp3.0\EDennis.Samples.NameApi.csproj.CopyComplete
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi\obj\Debug\netcoreapp3.0\EDennis.Samples.NameApi.dll
 C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi\obj\Debug\netcoreapp3.0\EDennis.Samples.NameApi.pdb
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.dll
+C:\Users\denmi\source\repos\EDennis.AspNetCore.ApiLauncher\EDennis.Samples.NameApi\bin\Debug\netcoreapp3.0\EDennis.Samples.Utils.pdb
