@@ -31,9 +31,9 @@ namespace EDennis.Samples.ApiGateway.Controllers {
             _logger.LogInformation("For Api Gateway, retrieving Time from TimeApi @ {TimeApiUrl}", _httpClient.BaseAddress.ToString());
             var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Time").Result;
             var content = response.Content.ReadAsStringAsync().Result;
-            var Time = JsonSerializer.Deserialize<Time>(content,
+            var time = JsonSerializer.Deserialize<Time>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-            return Time;
+            return time;
         }
 
     }
