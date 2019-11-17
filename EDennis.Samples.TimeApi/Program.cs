@@ -10,6 +10,8 @@ using System.Text.RegularExpressions;
 namespace EDennis.Samples.TimeApi {
     public class Program {
 
+        public const string APIS_CONFIGURATION_SECTION = "Apis";
+
         public static async void RunAsync (string[] args) {
             var host = CreateHostBuilder(args).Build();
             await host.RunAsync();
@@ -46,7 +48,7 @@ namespace EDennis.Samples.TimeApi {
 
         private static Apis GetApis(IConfiguration config) {
             var apis = new Apis();
-            config.GetSection("Apis").Bind(apis);
+            config.GetSection(APIS_CONFIGURATION_SECTION).Bind(apis);
             return apis;
         }
 
