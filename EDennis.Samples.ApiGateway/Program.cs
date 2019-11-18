@@ -4,7 +4,6 @@ using Microsoft.Extensions.Hosting;
 
 namespace EDennis.Samples.ApiGateway {
     public class Program {
-
         public static async void RunAsync(string[] args) {
             var host = ProgramUtils.CreateHostBuilder<Program, Startup>(args).Build();
             await host.RunAsync();
