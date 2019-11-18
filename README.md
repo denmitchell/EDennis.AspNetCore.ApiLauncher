@@ -413,7 +413,7 @@ namespace EDennis.Samples.TimeApi.Tester {
 
 The provided solution contains several sample test projects that demonstrate use of the abstract fixture.  For more information on Xunit class fixtures see [xUnit.NET Documentation: Shared Context between Tests](https://xunit.net/docs/shared-context).
 
-Step 7: Refactoring for Reusable Code
+### Step 7: Refactoring for Reusable Code
 
 The sample projects were modified to move some repetitive code into utility classes (Program.Utils, Launcher.Utils and HttpClientExtensions) in a separate project (EDennis.Samples.Utils).  As such, the Main method for each entry-point Program class looks like this:
 
