@@ -242,6 +242,10 @@ Below is a modification to support reading port assignments from Configuration, 
 
 ```
 
+## Further Refinements
+
+We have broken the default Program class into two Program classes -- one class that does all of the configuration and another class that launches the application.  After this refactoring, there are several additional steps that are needed for creating NuGet packages, integration testing the applications, and reducing repetitive code.  
+
 ### Step 5: Embedding Configurations in NuGet Packages 
 
 In the above, code I made use of a ManifestEmbeddedFileProvider for the two regular appsettings files.  Also, I included a separate appsettings.Shared.json file.  The reason for this approach is to allow NuGet to hold some partial configurations for the reusable APIs but to allow the reusable APIs to complete the configurations from a common source file.  
