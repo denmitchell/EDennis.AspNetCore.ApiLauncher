@@ -277,3 +277,147 @@ Here is a .csproj file from one of the sample reusable API projects in this repo
 For configurations that should be controlled outside of NuGet (e.g., port assignments on a local machine), one can have NuGet packages reference a *to-be-provided* appsettings.Shared.json file which can reside in the Launcher project.  Note that the call to AddJsonFile can specify that the resource is optional, just in case no centralized configurations are required.
 
 In the sample projects, I embedded certain configurations for the APIs (ProjectName, Scheme, and Host) and centralize other configurations (HttpsPort and HttpPort).  Assuming the API configuration keys have the same name (e.g, TimeApi, LocationApi), the two configurations -- embedded and centralized -- are merged into single API objects during binding. 
+
+### Step 6: Refactoring For Integration Tests
+
+Currently, the Program class in a Launcher project includes a call to ```Console.ReadKey()``` so that the program can block the execution thread while one or more child threads asynchronously run web servers.  To support integration tests, there is relatively simple modification that would allow the test applications to call the Launcher's Main method and also remotely control the blocking behavior.
+
+Microsoft has created the [```EventWaitHandle```](https://docs.microsoft.com/en-us/dotnet/api/system.threading.eventwaithandle?view=netcore-3.0) class to allow one process/thread to block and release other processes/threads on the same operating system.  The blocking/releasing process/thread can establish a named event to which other processes/threads subscribe.  These other processes block until the event is signalled.
+
+Let's create a reusable utility method called ```Block``` that allows a Launcher process to stay alive by using either ```Console.ReadKey``` or ```EventWaitHandle```, where the former approach requires direct intervention by the user/developer and the latter approach allows other processes to terminate the launcher. 
+
+```C#
+public static void Block(string[] args) {
+    //parse ewh argument, which carries the name of the synchronization event as a GUID
+    Regex pattern = new Regex("(?<=ewh[= ])[A-Za-z0-9\\-]+");
+
+    //if the ewh argument exists, create the EventWaitHandle and block on it
+    foreach (var match in args.Where(a => pattern.IsMatch(a)).Select(a => pattern.Match(a))) {
+        var guid = match.Value;
+        using EventWaitHandle ewh = new EventWaitHandle(
+                        true, EventResetMode.ManualReset, guid);
+        Console.WriteLine($"{new string('-', 80)}\nRunning until EventWaitHandle {guid} is set\n{new string('-', 80)}");
+        ewh.WaitOne();
+        return;
+    }
+
+    //otherwise, block on ReadKey
+    Console.WriteLine($"{ new string('-', 60)}\nRunning until any key is pressed\n{new string('-', 60)}");
+    Console.ReadKey();
+    return;
+}
+```
+
+Assuming this resuable Block method is placed in a separate static class called LauncherUtils, then the Launcher's Main method can be modified as follows:
+
+```C#
+public class Program {
+    public static void Main(string[] args) {
+        Task.Run(() => { A.Program.RunAsync(args); });
+        LauncherUtils.Block(args);
+    }
+}
+```
+
+To remotely control a launcher app from an Xunit integration test project, one can create an abstract class fixture that instantiates an EventWaitHandle, passes it's synchronization event name to the launcher app as an argument to the Main method, and then signals the event upon disposal.  Below is an example of such a class:
+
+```C#
+using System;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace EDennis.Samples.Utils {
+
+    /// <summary>
+    /// Xunit class fixture used to launch and terminate a web server for integration testing
+    /// </summary>
+    public abstract class AbstractLauncherFixture : IDisposable {
+
+        //the threading mechanism used to remotely terminate launcher apps
+        private readonly EventWaitHandle _ewh;
+
+        /// <summary>
+        /// The entry-point application's port (must be overidden in subclass)
+        /// </summary>
+        public abstract int EntryPointPort { get; }
+
+        /// <summary>
+        /// The entry-point application's scheme (can be overidden in subclass)
+        /// </summary>
+        public virtual string EntryPointScheme { get; } = "https";
+
+        /// <summary>
+        /// The Launcher's Main method (must be overidden in subclass)
+        /// </summary>
+        public abstract Action<string[]> LauncherMain { get; }
+
+        /// <summary>
+        /// An HttpClient that will be used for all tests of the entry-point application
+        /// </summary>
+        public HttpClient HttpClient { get; set; } 
+
+        /// <summary>
+        /// Constructs a new fixture and sets up the EventWaitHandle for 
+        /// remote termination of the entry-point app
+        /// </summary>
+        public AbstractLauncherFixture() {
+
+            //setup the EventWaitHandle
+            var arg = $"ewh={Guid.NewGuid().ToString()}";
+            _ewh = new EventWaitHandle(false, EventResetMode.ManualReset, arg);
+
+            //create the HttpClient
+            HttpClient = new HttpClient {
+                BaseAddress = new Uri($"{EntryPointScheme}://localhost:{EntryPointPort}")
+            };
+
+            //asynchronously initiate the launch of the server 
+            Task.Run(() => { LauncherMain(new string[] { arg }); });
+
+            //optional : use custom PingAsync (see HttpClientExtensions) to wait for server to start.
+            var canPing = HttpClient.PingAsync(10).Result;
+
+        }
+
+        /// <summary>
+        /// In disposing of this fixture instance, signal the EventWaitHandle so that the
+        /// launcher app can terminate and then dispose of the EventWaitHandle.
+        /// </summary>
+        public void Dispose() {
+            _ewh.Set();
+            _ewh.Dispose();
+        }
+    }
+}
+```
+
+Below is a sample subclass of this class fixture:
+
+```C#
+using EDennis.Samples.Utils;
+using System;
+using L = EDennis.Samples.TimeApi.Launcher;
+
+namespace EDennis.Samples.TimeApi.Tester {
+    public class LauncherFixture : AbstractLauncherFixture {
+        public override int EntryPointPort { get; } = 6501;
+        public override Action<string[]> LauncherMain { get; } = L.Program.Main;
+    }
+}
+```
+
+The provided solution contains several sample test projects that demonstrate use of the abstract fixture.  For more information on Xunit class fixtures see [xUnit.NET Documentation: Shared Context between Tests](https://xunit.net/docs/shared-context).
+
+Step 7: Refactoring for Reusable Code
+
+The sample projects were modified to move some repetitive code into utility classes (Program.Utils, Launcher.Utils and HttpClientExtensions) in a separate project (EDennis.Samples.Utils).  As such, the Main method for each entry-point Program class looks like this:
+
+```C#
+public static async void RunAsync(string[] args) {
+    var host = ProgramUtils.CreateHostBuilder<Program, Startup>(args).Build();
+    await host.RunAsync();
+}
+```
+
+It is possible that a developer may need different configuration providers/hierarchy for any given application.  As such, the provided utility classes allow the developer to pass in the configuration.  Of course, more flexibility is possible.   
