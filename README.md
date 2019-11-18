@@ -418,9 +418,11 @@ The provided solution contains several sample test projects that demonstrate use
 The sample projects were modified to move some repetitive code into utility classes (Program.Utils, Launcher.Utils and HttpClientExtensions) in a separate project (EDennis.Samples.Utils).  As such, the Main method for each entry-point Program class looks like this:
 
 ```C#
-public static async void RunAsync(string[] args) {
-    var host = ProgramUtils.CreateHostBuilder<Program, Startup>(args).Build();
-    await host.RunAsync();
+public class Program {
+    public static async void RunAsync(string[] args) {
+        var host = ProgramUtils.CreateHostBuilder<Program, Startup>(args).Build();
+        await host.RunAsync();
+    }
 }
 ```
 
