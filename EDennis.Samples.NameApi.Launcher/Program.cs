@@ -7,8 +7,8 @@ namespace EDennis.Samples.NameApi.Launcher {
     public class Program {
 
         public static void Main(string[] args) {
-            Task.Run(() => { T.Program.RunAsync(args); });
-            Task.Run(() => { N.Program.RunAsync(args); });
+            Task.Run(() => { new T.Program().RunAsync(args); });
+            Task.Run(() => { new N.Program().RunAsync(args); });
             LauncherUtils.Block(args);
         }
 

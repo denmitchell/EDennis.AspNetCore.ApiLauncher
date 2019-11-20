@@ -1,13 +1,6 @@
-using EDennis.Samples.Utils;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
+using EDennis.AspNetCore.Base.Web;
 
 namespace EDennis.Samples.ApiGateway {
-    public class Program {
-        public static async void RunAsync(string[] args) {
-            var host = ProgramUtils.CreateHostBuilder<Program, Startup>(args).Build();
-            await host.RunAsync();
-        }
+    public class Program : ProgramBase<Startup> { }
 
-    }
 }

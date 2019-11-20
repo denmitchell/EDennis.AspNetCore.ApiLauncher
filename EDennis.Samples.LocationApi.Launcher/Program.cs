@@ -7,8 +7,8 @@ namespace EDennis.Samples.LocationApi.Launcher {
     public class Program {
 
         public static void Main(string[] args) {
-            Task.Run(() => { T.Program.RunAsync(args); });
-            Task.Run(() => { L.Program.RunAsync(args); });
+            Task.Run(() => { new T.Program().RunAsync(args); });
+            Task.Run(() => { new L.Program().RunAsync(args); });
             LauncherUtils.Block(args);
         }
 

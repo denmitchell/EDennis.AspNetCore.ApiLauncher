@@ -5593,7 +5593,7 @@
       ]
     },
     "xunit/2.4.1": {
-      "sha512": "XNR3Yz9QTtec16O0aKcO6+baVNpXmOnPUxDkCY97J+8krUYxPvXT1szYYEUdKk4sB8GOI2YbAjRIOm8ZnXRfzQ==",
+      "sha512": "OwBhpez9SRZvEjqic3WVbACu2wsi9u5qi+YpzVg6BTL3R25R/6ytM4UkUTnx+dSZDJ3IUPx+99CX/YXnxrQAWA==",
       "type": "package",
       "path": "xunit/2.4.1",
       "files": [
@@ -5604,7 +5604,7 @@
       ]
     },
     "xunit.abstractions/2.0.3": {
-      "sha512": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "sha512": "PKJri5f0qEQPFvgY6CZR9XG8JROlWSdC/ZYLkkDQuID++Egn+yWjB+Yf57AZ8U6GRlP7z33uDQ4/r5BZPer2JA==",
       "type": "package",
       "path": "xunit.abstractions/2.0.3",
       "files": [
@@ -5636,7 +5636,7 @@
       ]
     },
     "xunit.assert/2.4.1": {
-      "sha512": "O/Oe0BS5RmSsM+LQOb041TzuPo5MdH2Rov+qXGS37X+KFG1Hxz7kopYklM5+1Y+tRGeXrOx5+Xne1RuqLFQoyQ==",
+      "sha512": "xWgCZQSBeM9C7Ak+VuzGsQr7K5ODLVsXK3g2sDD38/3Ljom2IbWJPudG8+IsspgvfpGh0g9Oe5vLc8U+izjieQ==",
       "type": "package",
       "path": "xunit.assert/2.4.1",
       "files": [
@@ -5649,7 +5649,7 @@
       ]
     },
     "xunit.core/2.4.1": {
-      "sha512": "Zsj5OMU6JasNGERXZy8s72+pcheG6Q15atS5XpZXqAtULuyQiQ6XNnUsp1gyfC6WgqScqMvySiEHmHcOG6Eg0Q==",
+      "sha512": "8taMlAQy9qQ7Tbiqr2TAwGkU+X0sckQ+96j7R9OX/Ut1gmHEa4QYIrI8c15j3iKTj3XzyQMVohkTMWa80BRf6w==",
       "type": "package",
       "path": "xunit.core/2.4.1",
       "files": [
@@ -5664,7 +5664,7 @@
       ]
     },
     "xunit.extensibility.core/2.4.1": {
-      "sha512": "yKZKm/8QNZnBnGZFD9SewkllHBiK0DThybQD/G4PiAmQjKtEZyHi6ET70QPU9KtSMJGRYS6Syk7EyR2EVDU4Kg==",
+      "sha512": "qkdxGfxdsAurEFsr8z6LfoBRVb4Vcbeyk1wF+MRrObruwOtl7O+ihQUEHX8fnZnlUFsY6kR+9tcweomLsocR1A==",
       "type": "package",
       "path": "xunit.extensibility.core/2.4.1",
       "files": [
@@ -5682,7 +5682,7 @@
       ]
     },
     "xunit.extensibility.execution/2.4.1": {
-      "sha512": "7e/1jqBpcb7frLkB6XDrHCGXAbKN4Rtdb88epYxCSRQuZDRW8UtTfdTEVpdTl8s4T56e07hOBVd4G0OdCxIY2A==",
+      "sha512": "gc8TxVPew3+Hy6qJTs70JHirtSt5ky380gxC8QF+VmWOs6EdWGlo9xm3URkm+gPbE9roVVfnrw5AuqFNr4R52Q==",
       "type": "package",
       "path": "xunit.extensibility.execution/2.4.1",
       "files": [
@@ -5697,7 +5697,7 @@
       ]
     },
     "xunit.runner.visualstudio/2.4.1": {
-      "sha512": "mBXd1lp1TQr4to2nFv+c4Tf+RnPoQPKglzwLdbdirOUxRaJsCUNDUx2y7E6j9ajgISlTTp1CydFBZCRCUIrwDg==",
+      "sha512": "70iTd44VD/UcP5kX7Bm6DjNayi9pquI7NhnU7Nl46qWVQBDHVqRrFDXgNrGP936YxefJxzC+2bp1yQUwPJIEvg==",
       "type": "package",
       "path": "xunit.runner.visualstudio/2.4.1",
       "files": [
@@ -5760,23 +5760,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\denmi\\.nuget\\packages\\": {},
+    "C:\\Users\\MitchellDenC\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Tester\\EDennis.Samples.TimeApi.Tester.csproj",
+      "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Tester\\EDennis.Samples.TimeApi.Tester.csproj",
       "projectName": "EDennis.Samples.TimeApi.Tester",
-      "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Tester\\EDennis.Samples.TimeApi.Tester.csproj",
-      "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Tester\\obj\\",
+      "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Tester\\EDennis.Samples.TimeApi.Tester.csproj",
+      "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Tester\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -5785,28 +5786,27 @@
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
         "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\denmi\\source\\repos\\NuGet": {},
+        "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
+        "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-              "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+            "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+              "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
             },
-            "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Launcher\\EDennis.Samples.TimeApi.Launcher.csproj": {
-              "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Launcher\\EDennis.Samples.TimeApi.Launcher.csproj"
+            "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Launcher\\EDennis.Samples.TimeApi.Launcher.csproj": {
+              "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi.Launcher\\EDennis.Samples.TimeApi.Launcher.csproj"
             },
-            "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj": {
-              "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj"
+            "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj": {
+              "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj"
             },
-            "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-              "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+            "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+              "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
             }
           }
         }
@@ -5851,6 +5851,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5859,7 +5873,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
       }
     }
   }

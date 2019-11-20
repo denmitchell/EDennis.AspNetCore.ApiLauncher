@@ -1767,14 +1767,14 @@
     "xunit/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XNR3Yz9QTtec16O0aKcO6+baVNpXmOnPUxDkCY97J+8krUYxPvXT1szYYEUdKk4sB8GOI2YbAjRIOm8ZnXRfzQ==",
+      "sha512": "sha512-OwBhpez9SRZvEjqic3WVbACu2wsi9u5qi+YpzVg6BTL3R25R/6ytM4UkUTnx+dSZDJ3IUPx+99CX/YXnxrQAWA==",
       "path": "xunit/2.4.1",
       "hashPath": "xunit.2.4.1.nupkg.sha512"
     },
     "xunit.abstractions/2.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "sha512": "sha512-PKJri5f0qEQPFvgY6CZR9XG8JROlWSdC/ZYLkkDQuID++Egn+yWjB+Yf57AZ8U6GRlP7z33uDQ4/r5BZPer2JA==",
       "path": "xunit.abstractions/2.0.3",
       "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
     },
@@ -1788,35 +1788,35 @@
     "xunit.assert/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-O/Oe0BS5RmSsM+LQOb041TzuPo5MdH2Rov+qXGS37X+KFG1Hxz7kopYklM5+1Y+tRGeXrOx5+Xne1RuqLFQoyQ==",
+      "sha512": "sha512-xWgCZQSBeM9C7Ak+VuzGsQr7K5ODLVsXK3g2sDD38/3Ljom2IbWJPudG8+IsspgvfpGh0g9Oe5vLc8U+izjieQ==",
       "path": "xunit.assert/2.4.1",
       "hashPath": "xunit.assert.2.4.1.nupkg.sha512"
     },
     "xunit.core/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Zsj5OMU6JasNGERXZy8s72+pcheG6Q15atS5XpZXqAtULuyQiQ6XNnUsp1gyfC6WgqScqMvySiEHmHcOG6Eg0Q==",
+      "sha512": "sha512-8taMlAQy9qQ7Tbiqr2TAwGkU+X0sckQ+96j7R9OX/Ut1gmHEa4QYIrI8c15j3iKTj3XzyQMVohkTMWa80BRf6w==",
       "path": "xunit.core/2.4.1",
       "hashPath": "xunit.core.2.4.1.nupkg.sha512"
     },
     "xunit.extensibility.core/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yKZKm/8QNZnBnGZFD9SewkllHBiK0DThybQD/G4PiAmQjKtEZyHi6ET70QPU9KtSMJGRYS6Syk7EyR2EVDU4Kg==",
+      "sha512": "sha512-qkdxGfxdsAurEFsr8z6LfoBRVb4Vcbeyk1wF+MRrObruwOtl7O+ihQUEHX8fnZnlUFsY6kR+9tcweomLsocR1A==",
       "path": "xunit.extensibility.core/2.4.1",
       "hashPath": "xunit.extensibility.core.2.4.1.nupkg.sha512"
     },
     "xunit.extensibility.execution/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7e/1jqBpcb7frLkB6XDrHCGXAbKN4Rtdb88epYxCSRQuZDRW8UtTfdTEVpdTl8s4T56e07hOBVd4G0OdCxIY2A==",
+      "sha512": "sha512-gc8TxVPew3+Hy6qJTs70JHirtSt5ky380gxC8QF+VmWOs6EdWGlo9xm3URkm+gPbE9roVVfnrw5AuqFNr4R52Q==",
       "path": "xunit.extensibility.execution/2.4.1",
       "hashPath": "xunit.extensibility.execution.2.4.1.nupkg.sha512"
     },
     "xunit.runner.visualstudio/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mBXd1lp1TQr4to2nFv+c4Tf+RnPoQPKglzwLdbdirOUxRaJsCUNDUx2y7E6j9ajgISlTTp1CydFBZCRCUIrwDg==",
+      "sha512": "sha512-70iTd44VD/UcP5kX7Bm6DjNayi9pquI7NhnU7Nl46qWVQBDHVqRrFDXgNrGP936YxefJxzC+2bp1yQUwPJIEvg==",
       "path": "xunit.runner.visualstudio/2.4.1",
       "hashPath": "xunit.runner.visualstudio.2.4.1.nupkg.sha512"
     },
