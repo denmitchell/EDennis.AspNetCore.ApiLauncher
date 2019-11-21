@@ -19,10 +19,12 @@ namespace EDennis.Samples.Utils {
                 return;
             }
 
-            //otherwise, block on ReadKey
+            return;
+        }
+
+        public static void Block() {
             Console.WriteLine($"{ new string('-', 60)}\nRunning until any key is pressed\n{new string('-', 60)}");
             Console.ReadKey();
-            return;
         }
 
 

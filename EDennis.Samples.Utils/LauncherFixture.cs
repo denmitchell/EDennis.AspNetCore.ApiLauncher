@@ -45,7 +45,6 @@ namespace EDennis.Samples.Utils {
             //asynchronously initiate the launch of the server 
             launcher.Launch(new string[] { arg });
 
-            //optional : use custom PingAsync (see HttpClientExtensions) to wait for server to start.
             var canPing = HttpClient.PingAsync(10).Result;
 
         }

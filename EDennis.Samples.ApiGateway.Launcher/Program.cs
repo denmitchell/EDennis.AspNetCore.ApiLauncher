@@ -1,4 +1,5 @@
-﻿using EDennis.Samples.Utils;
+﻿using EDennis.AspNetCore.Base.Web;
+using EDennis.Samples.Utils;
 using System;
 using System.Threading.Tasks;
 using G = EDennis.Samples.ApiGateway;
@@ -12,14 +13,16 @@ namespace EDennis.Samples.ApiGateway.Launcher {
 
         public static void Main(string[] args) {
             new Program().Launch(args);
+            LauncherUtils.Block();
         }
 
         public void Launch(string[] args) {
-            new T.Program().Run(args);
-            new L.Program().Run(args);
-            new N.Program().Run(args);
-            new Q.Program().Run(args);
-            new G.Program().Run(args);
+            var t = new T.Program().Run(args);
+            var l = new L.Program().Run(args);
+            var n = new N.Program().Run(args);
+            var q = new Q.Program().Run(args);
+            var g = new G.Program().Run(args);
+            ProgramBase.CanPingAsync(t, l, n, q, g);
         }
 
 

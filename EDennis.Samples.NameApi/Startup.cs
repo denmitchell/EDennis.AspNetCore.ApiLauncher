@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using EDennis.Samples.SharedModel;
 using Microsoft.AspNetCore.Builder;
@@ -25,6 +26,7 @@ namespace EDennis.Samples.NameApi {
             services.Configure<Apis>(Configuration.GetSection("Apis"));
             services.AddHttpClient();
             services.AddControllers();
+            //Thread.Sleep(10 * 1000);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

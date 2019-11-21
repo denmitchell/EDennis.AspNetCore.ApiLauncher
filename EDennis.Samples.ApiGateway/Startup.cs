@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Threading;
 
 namespace EDennis.Samples.ApiGateway {
     public class Startup {
@@ -18,6 +19,7 @@ namespace EDennis.Samples.ApiGateway {
             services.Configure<Apis>(Configuration.GetSection("Apis"));
             services.AddHttpClient();
             services.AddControllers();
+            //Thread.Sleep(10 * 1000);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
