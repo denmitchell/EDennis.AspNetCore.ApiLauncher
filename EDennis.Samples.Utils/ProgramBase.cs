@@ -9,7 +9,7 @@ using EDennis.Samples.SharedModel;
 
 namespace EDennis.AspNetCore.Base.Web {
 
-    public abstract class ProgramBase<TStartup> : ProgramBase, IProgramBase
+    public abstract class ProgramBase<TStartup> : ProgramBase, IProgram
         where TStartup : class
         {
         public override Type Startup {
@@ -19,7 +19,7 @@ namespace EDennis.AspNetCore.Base.Web {
         }
     }
 
-    public abstract class ProgramBase : IProgramBase {
+    public abstract class ProgramBase : IProgram {
 
         public virtual IConfiguration Configuration {
             get {
@@ -50,16 +50,39 @@ namespace EDennis.AspNetCore.Base.Web {
         public virtual string ApisConfigurationSection { get; } = "Apis";
         public abstract Type Startup { get; }
 
-        public async void RunAsync(string[] args) {
-            var host = CreateHostBuilder(args).Build();
-            await host.RunAsync();
+        public Api Api { get; }
+
+        public ProgramBase() {
+
+            var apis = new Apis();
+            var config = Configuration;
+            var assemblyName = GetType().Assembly.GetName().Name;
+            try {
+                config.GetSection(ApisConfigurationSection).Bind(apis);
+            } catch (Exception) {
+                throw new ApplicationException($"Cannot bind to {ApisConfigurationSection} in Configuration.");
+            }
+            try {
+                Api = apis.FirstOrDefault(a => a.Value.ProjectName == assemblyName).Value;
+            } catch (Exception) {
+                throw new ApplicationException($"Cannot bind to {ApisConfigurationSection}:{assemblyName} in Configuration.");
+            }
+
         }
+
+
+        public IProgram Run(string[] args) {
+            var host = CreateHostBuilder(args).Build();
+            Task.Run(() => { host.RunAsync(); });
+            return this;
+        }
+
 
         public IHostBuilder CreateHostBuilder(string[] args) {
 
             var builder = Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder => {
-                    var urls = GetUrls();
+                    var urls = Api.Urls;
                     webBuilder
                     .UseConfiguration(Configuration)
                     .UseUrls(urls)
@@ -68,13 +91,6 @@ namespace EDennis.AspNetCore.Base.Web {
             return builder;
         }
 
-        public string[] GetUrls() {
-            var apis = new Apis();
-            var config = Configuration;
-            config.GetSection(ApisConfigurationSection).Bind(apis);
-            var api = apis.FirstOrDefault(a => a.Value.ProjectName == GetType().Assembly.GetName().Name).Value;
-            return api.Urls;
-        }
 
     }
 }

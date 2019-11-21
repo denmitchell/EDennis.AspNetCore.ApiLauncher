@@ -11,11 +11,11 @@ namespace EDennis.Samples.ApiGateway.Launcher {
     public class Program {
 
         public static void Main(string[] args) {
-            Task.Run(() => { new T.Program().RunAsync(args); });
-            Task.Run(() => { new L.Program().RunAsync(args); });
-            Task.Run(() => { new N.Program().RunAsync(args); });
-            Task.Run(() => { new Q.Program().RunAsync(args); });
-            Task.Run(() => { new G.Program().RunAsync(args); });
+            new T.Program().Run(args);
+            new L.Program().Run(args);
+            new N.Program().Run(args);
+            new Q.Program().Run(args);
+            new G.Program().Run(args);
             LauncherUtils.Block(args);
         }
 

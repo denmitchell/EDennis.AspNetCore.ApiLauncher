@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj": {}
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj",
         "projectName": "EDennis.Samples.ApiGateway.Launcher",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -27,36 +26,37 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
               }
             }
           }
@@ -79,24 +79,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -105,25 +87,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj",
         "projectName": "EDennis.Samples.ApiGateway.Tester",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\EDennis.Samples.ApiGateway.Tester.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Tester\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -132,27 +113,28 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway.Launcher\\EDennis.Samples.ApiGateway.Launcher.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
               }
             }
           }
@@ -168,19 +150,15 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.2.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[16.4.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
@@ -193,20 +171,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -215,25 +179,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj",
         "projectName": "EDennis.Samples.ApiGateway",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\EDennis.Samples.ApiGateway.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -242,21 +205,22 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
               }
             }
           }
@@ -285,20 +249,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -307,25 +257,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj",
         "projectName": "EDennis.Samples.LocationApi",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\EDennis.Samples.LocationApi.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.LocationApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -334,21 +283,22 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
               }
             }
           }
@@ -377,20 +327,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -399,25 +335,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj",
         "projectName": "EDennis.Samples.NameApi",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\EDennis.Samples.NameApi.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.NameApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -426,21 +361,22 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
               }
             }
           }
@@ -469,20 +405,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -491,25 +413,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj",
         "projectName": "EDennis.Samples.QuoteApi",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\EDennis.Samples.QuoteApi.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.QuoteApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -518,21 +439,22 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
               }
             }
           }
@@ -561,20 +483,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -583,25 +491,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj",
         "projectName": "EDennis.Samples.SharedModel",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -610,10 +517,11 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
@@ -640,20 +548,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -662,25 +556,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj",
         "projectName": "EDennis.Samples.TimeApi",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\EDennis.Samples.TimeApi.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.TimeApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -689,21 +582,22 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               },
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj"
               }
             }
           }
@@ -732,20 +626,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -754,25 +634,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
+    "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj",
+        "projectUniqueName": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj",
         "projectName": "EDennis.Samples.Utils",
-        "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj",
-        "packagesPath": "C:\\Users\\MitchellDenC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\obj\\",
+        "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\EDennis.Samples.Utils.csproj",
+        "packagesPath": "C:\\Users\\denmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MitchellDenC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Users\\denmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -781,18 +660,19 @@
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\MitchellDenC\\source\\repos\\Nuget": {},
-          "I:\\SLC-Strategic Leadership Center\\SLC-Enterprise Technology\\Nuget": {},
+          "C:\\Users\\denmi\\source\\repos\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/3TW1cc6M7viwUhQfWBif5IJNAUXHysCmKBILBiykas23BVTzHD/api": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
-                "projectPath": "C:\\Users\\MitchellDenC\\Source\\Repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
+              "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj": {
+                "projectPath": "C:\\Users\\denmi\\source\\repos\\EDennis.AspNetCore.ApiLauncher\\EDennis.Samples.SharedModel\\EDennis.Samples.SharedModel.csproj"
               }
             }
           }
@@ -809,6 +689,10 @@
             "Flurl": {
               "target": "Package",
               "version": "[2.8.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
@@ -821,20 +705,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -843,7 +713,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

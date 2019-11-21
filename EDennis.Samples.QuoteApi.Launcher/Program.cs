@@ -1,13 +1,12 @@
 ﻿using EDennis.Samples.Utils;
-using System.Threading.Tasks;
 using Q = EDennis.Samples.QuoteApi;
 using T = EDennis.Samples.TimeApi;
 
 namespace EDennis.Samples.QuoteApi.Launcher {
     public class Program {
         public static void Main(string[] args) {
-            Task.Run(() => { new T.Program().RunAsync(args); });
-            Task.Run(() => { new Q.Program().RunAsync(args); });
+            new T.Program().Run(args);
+            new Q.Program().Run(args);
             LauncherUtils.Block(args);
         }
 
