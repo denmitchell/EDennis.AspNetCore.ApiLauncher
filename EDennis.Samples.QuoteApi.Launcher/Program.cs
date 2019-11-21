@@ -10,7 +10,6 @@ namespace EDennis.Samples.QuoteApi.Launcher {
         public void Launch(string[] args) {
             new T.Program().Run(args);
             new Q.Program().Run(args);
-            LauncherUtils.Block(args);
         }
 
     }

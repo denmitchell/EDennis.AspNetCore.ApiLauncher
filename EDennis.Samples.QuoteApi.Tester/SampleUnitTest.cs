@@ -18,9 +18,11 @@ namespace EDennis.Samples.QuoteApi.Tester {
         }
 
         [Theory]
-        [MemberData(nameof(Data))]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(3)]
         public void GetQuote(int idx) {
-            var result = HttpClient.Get<Quote>($"{HttpClient.BaseAddress}Quote");
+            var result = HttpClient.Get<Quote>($"Quote/{idx}");
             var quote = (Quote)result.Value;
             if (quote == null)
                 throw new ApplicationException($"Cannot retrieve quote from endpoint: {HttpClient.BaseAddress}Quote");

@@ -21,7 +21,7 @@ namespace EDennis.Samples.ApiGateway.Tester {
         [Theory]
         [MemberData(nameof(Data))]
         public void GetTime(int idx) {
-            var result = HttpClient.Get<Time>($"{HttpClient.BaseAddress}Time");
+            var result = HttpClient.Get<Time>($"Time");
             var time = (Time)result.Value;
             if (time == null)
                 throw new ApplicationException($"Cannot retrieve time from endpoint: {HttpClient.BaseAddress}Time");
@@ -29,32 +29,37 @@ namespace EDennis.Samples.ApiGateway.Tester {
         }
 
         [Theory]
-        [MemberData(nameof(Data))]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(3)]
         public void GetLocation(int idx) {
-            var result = HttpClient.Get<Location>($"{HttpClient.BaseAddress}Location");
+            var result = HttpClient.Get<Location>($"Location/{idx}");
             var location = (Location)result.Value;
             if (location == null)
-                throw new ApplicationException($"Cannot retrieve location from endpoint: {HttpClient.BaseAddress}Location");
+                throw new ApplicationException($"Cannot retrieve location from endpoint: {HttpClient.BaseAddress}Location/{idx}");
             Output.WriteLine($"{idx}: " + JsonSerializer.Serialize(location, new JsonSerializerOptions { WriteIndented = true }));
         }
 
         [Theory]
-        [MemberData(nameof(Data))]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(3)]
         public void GetQuote(int idx) {
-            var result = HttpClient.Get<Quote>($"{HttpClient.BaseAddress}Quote");
+            var result = HttpClient.Get<Quote>($"Quote/{idx}");
             var quote = (Quote)result.Value;
             if (quote == null)
-                throw new ApplicationException($"Cannot retrieve quote from endpoint: {HttpClient.BaseAddress}Quote");
+                throw new ApplicationException($"Cannot retrieve quote from endpoint: {HttpClient.BaseAddress}Quote/{idx}");
             Output.WriteLine($"{idx}: " + JsonSerializer.Serialize(quote, new JsonSerializerOptions { WriteIndented = true }));
         }
 
         [Theory]
-        [MemberData(nameof(Data))]
+        [InlineData(1)]
+        [InlineData(2)]
         public void GetName(int idx) {
-            var result = HttpClient.Get<Name>($"{HttpClient.BaseAddress}Name");
+            var result = HttpClient.Get<Name>($"Name/{idx}");
             var name = (Name)result.Value;
             if (name == null)
-                throw new ApplicationException($"Cannot retrieve name from endpoint: {HttpClient.BaseAddress}Name");
+                throw new ApplicationException($"Cannot retrieve name from endpoint: {HttpClient.BaseAddress}Name/{idx}");
             Output.WriteLine($"{idx}: " + JsonSerializer.Serialize(name, new JsonSerializerOptions { WriteIndented = true }));
         }
 

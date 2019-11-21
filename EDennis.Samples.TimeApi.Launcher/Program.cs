@@ -12,7 +12,6 @@ namespace EDennis.Samples.TimeApi.Launcher {
 
         public void Launch(string[] args) {
             new T.Program().Run(args);
-            //LauncherUtils.Block(args);
         }
     }
 

@@ -20,7 +20,6 @@ namespace EDennis.Samples.ApiGateway.Launcher {
             new N.Program().Run(args);
             new Q.Program().Run(args);
             new G.Program().Run(args);
-            LauncherUtils.Block(args);
         }
 
 

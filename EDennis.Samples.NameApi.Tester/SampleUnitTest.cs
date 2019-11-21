@@ -18,12 +18,13 @@ namespace EDennis.Samples.NameApi.Tester {
 
 
         [Theory]
-        [MemberData(nameof(Data))]
+        [InlineData(1)]
+        [InlineData(2)]
         public void GetName(int idx) {
-            var result = HttpClient.Get<Name>($"{HttpClient.BaseAddress}Name");
+            var result = HttpClient.Get<Name>($"Name/{idx}");
             var name = (Name)result.Value;
             if (name == null)
-                throw new ApplicationException($"Cannot retrieve name from endpoint: {HttpClient.BaseAddress}Name");
+                throw new ApplicationException($"Cannot retrieve name from endpoint: {HttpClient.BaseAddress}Name/{idx}");
             Output.WriteLine($"{idx}: " + JsonSerializer.Serialize(name, new JsonSerializerOptions { WriteIndented = true }));
         }
 

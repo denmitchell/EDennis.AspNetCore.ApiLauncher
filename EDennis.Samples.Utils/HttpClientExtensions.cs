@@ -14,14 +14,14 @@ namespace EDennis.Samples.Utils {
     public static class HttpClientExtensions {
 
 
-        public static ObjectResult Get<TResponseObject>(this HttpClient client, string relativeUrlFromBase) {
+        public static ObjectResult Get<TResponseObject>(this HttpClient client, string relativeUrlFromBase)
+            where TResponseObject: new() {
             return client.GetAsync<TResponseObject>(relativeUrlFromBase).Result;
         }
 
         public static async Task<ObjectResult> GetAsync<TResponseObject>(
-                this HttpClient client, string relativeUrlFromBase) {
-
-
+                this HttpClient client, string relativeUrlFromBase) 
+                where TResponseObject: new() {
             var url = Url.Combine(client.BaseAddress.ToString(), relativeUrlFromBase);
             var response = await client.GetAsync(url);
             var objResult = await GenerateObjectResult<TResponseObject>(response);
@@ -30,7 +30,8 @@ namespace EDennis.Samples.Utils {
 
         }
 
-        private async static Task<ObjectResult> GenerateObjectResult<T>(HttpResponseMessage response) {
+        private async static Task<ObjectResult> GenerateObjectResult<T>(HttpResponseMessage response)
+            where T: new(){
 
             object value = null;
 
@@ -40,7 +41,7 @@ namespace EDennis.Samples.Utils {
                 var json = await response.Content.ReadAsStringAsync();
 
                 if (statusCode < 299 && typeof(T) != typeof(string)) {
-                    value = JsonSerializer.Deserialize<T>(json);
+                    value = JsonSerializer.Deserialize<T>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 } else {
                     value = json;
                 }

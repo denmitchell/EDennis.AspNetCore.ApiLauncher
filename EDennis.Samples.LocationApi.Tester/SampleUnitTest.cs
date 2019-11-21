@@ -19,12 +19,14 @@ namespace EDennis.Samples.LocationApi.Tester {
 
 
         [Theory]
-        [MemberData(nameof(Data))]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(3)]
         public void GetLocation(int idx) {
-            var result = HttpClient.Get<Location>($"{HttpClient.BaseAddress}Location");
+            var result = HttpClient.Get<Location>($"Location/{idx}");
             var location = (Location)result.Value;
             if (location == null)
-                throw new ApplicationException($"Cannot retrieve location from endpoint: {HttpClient.BaseAddress}Location");
+                throw new ApplicationException($"Cannot retrieve location from endpoint: {HttpClient.BaseAddress}Location/{idx}");
             Output.WriteLine($"{idx}: " + JsonSerializer.Serialize(location, new JsonSerializerOptions { WriteIndented = true }));
         }
 

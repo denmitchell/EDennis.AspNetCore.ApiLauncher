@@ -12,7 +12,6 @@ namespace EDennis.Samples.LocationApi.Launcher {
         public void Launch(string[] args) {
             new T.Program().Run(args);
             new L.Program().Run(args);
-            LauncherUtils.Block(args);
         }
 
 
