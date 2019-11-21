@@ -100,7 +100,7 @@ namespace EDennis.AspNetCore.Base.Web {
             return builder;
         }
 
-
+        #region CanPingAsync
         public static bool CanPingAsync<TProgram1>(TProgram1 program1)
             where TProgram1 : IProgram{
             var tasks = new Task[] {
@@ -316,7 +316,7 @@ namespace EDennis.AspNetCore.Base.Web {
         }
 
 
-        private static async Task<bool> CanPingAsync(string host, int port, int timeoutSeconds = 5) {
+        private static async Task<bool> CanPingAsync(string host, int port, int timeoutSeconds = 15) {
 
             var pingable = false;
 
@@ -344,7 +344,7 @@ namespace EDennis.AspNetCore.Base.Web {
             return pingable;
         }
 
-
+        #endregion
 
     }
 }
