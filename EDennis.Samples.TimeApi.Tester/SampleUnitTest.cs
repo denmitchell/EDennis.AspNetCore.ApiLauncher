@@ -19,7 +19,8 @@ namespace EDennis.Samples.TimeApi.Tester {
         [Theory]
         [MemberData(nameof(Data))]
         public void GetTime(int idx) {
-            var result = HttpClient.Get<Time>($"{HttpClient.BaseAddress}Time");
+            var canPing = HttpClient.Ping();
+            var result = HttpClient.Get<Time>("time");
             var time = (Time)result.Value;
             if (time == null)
                 throw new ApplicationException($"Cannot retrieve time from endpoint: {HttpClient.BaseAddress}Time");

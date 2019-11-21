@@ -7,6 +7,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using EDennis.Samples.SharedModel;
 using System.Collections.Generic;
+using EDennis.Samples.Utils;
+using System.Diagnostics;
+using System.Net.Sockets;
+using System.Threading;
 
 namespace EDennis.AspNetCore.Base.Web {
 
@@ -74,7 +78,11 @@ namespace EDennis.AspNetCore.Base.Web {
 
         public IProgram Run(string[] args) {
             var host = CreateHostBuilder(args).Build();
-            Task.Run(() => { host.RunAsync(); });
+            Task.Run(() => { 
+                host.RunAsync();
+                EDennis.Samples.Utils.LauncherUtils.Block(args);
+            });
+            var pingable = CanPingAsync(Api.Host, Api.MainPort.Value).Result;
             return this;
         }
 
@@ -91,6 +99,36 @@ namespace EDennis.AspNetCore.Base.Web {
                 });
             return builder;
         }
+
+
+        private static async Task<bool> CanPingAsync(string host, int port, int timeoutSeconds = 5) {
+
+            var pingable = false;
+
+            await Task.Run(() => {
+
+                var sw = new Stopwatch();
+
+                sw.Start();
+                while (sw.ElapsedMilliseconds < (timeoutSeconds * 1000)) {
+                    try {
+                        using var tcp = new TcpClient(host, port);
+                        var connected = tcp.Connected;
+                        pingable = true;
+                        break;
+                    } catch (Exception ex) {
+                        if (!ex.Message.Contains("No connection could be made because the target machine actively refused it"))
+                            throw ex;
+                        else
+                            Thread.Sleep(1000);
+                    }
+
+                }
+
+            });
+            return pingable;
+        }
+
 
 
     }
