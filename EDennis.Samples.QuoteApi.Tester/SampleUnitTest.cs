@@ -1,6 +1,7 @@
 using EDennis.AspNetCore.Base.Testing;
 using EDennis.Samples.SharedModel;
 using EDennis.Samples.Utils;
+using System;
 using System.Net.Http;
 using System.Text.Json;
 using Xunit;

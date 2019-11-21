@@ -11,7 +11,7 @@ namespace EDennis.Samples.NameApi.Launcher {
 
         public void Launch(string[] args) {
             new T.Program().Run(args);
-            new Q.Program().Run(args);
+            new N.Program().Run(args);
             LauncherUtils.Block(args);
         }
 
