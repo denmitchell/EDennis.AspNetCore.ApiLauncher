@@ -5,6 +5,11 @@ using System.Threading;
 
 namespace EDennis.Samples.Utils {
     public static class LauncherUtils {
+
+        /// <summary>
+        /// Non-interactive mode blocking (e.g, for automated integration tests)
+        /// </summary>
+        /// <param name="args">arguments, one of which should be a guid event wait handle key</param>
         public static void Block(string[] args) {
             //parse ewh argument, which carries the name of the synchronization event as a GUID
             Regex pattern = new Regex("(?<=ewh[= ])[A-Za-z0-9\\-]+");
@@ -22,6 +27,9 @@ namespace EDennis.Samples.Utils {
             return;
         }
 
+        /// <summary>
+        /// Interactive mode blocking
+        /// </summary>
         public static void Block() {
             Console.WriteLine($"{ new string('-', 60)}\nRunning until any key is pressed\n{new string('-', 60)}");
             Console.ReadKey();
