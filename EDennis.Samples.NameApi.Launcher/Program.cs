@@ -3,13 +3,18 @@ using N = EDennis.Samples.NameApi;
 using T = EDennis.Samples.TimeApi;
 
 namespace EDennis.Samples.NameApi.Launcher {
-    public class Program {
+    public class Program : ILauncher {
 
         public static void Main(string[] args) {
+            new Program().Launch(args);
+        }
+
+        public void Launch(string[] args) {
             new T.Program().Run(args);
-            new N.Program().Run(args);
+            new Q.Program().Run(args);
             LauncherUtils.Block(args);
         }
+
 
     }
 }

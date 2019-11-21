@@ -8,9 +8,13 @@ using Q = EDennis.Samples.QuoteApi;
 using T = EDennis.Samples.TimeApi;
 
 namespace EDennis.Samples.ApiGateway.Launcher {
-    public class Program {
+    public class Program : ILauncher {
 
         public static void Main(string[] args) {
+            new Program().Launch(args);
+        }
+
+        public void Launch(string[] args) {
             new T.Program().Run(args);
             new L.Program().Run(args);
             new N.Program().Run(args);
@@ -18,6 +22,7 @@ namespace EDennis.Samples.ApiGateway.Launcher {
             new G.Program().Run(args);
             LauncherUtils.Block(args);
         }
+
 
     }
 }

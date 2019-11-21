@@ -1,8 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
-using EDennis.Samples.SharedModel;
+﻿using EDennis.Samples.SharedModel;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace EDennis.AspNetCore.Base.Web {
     public interface IProgram {

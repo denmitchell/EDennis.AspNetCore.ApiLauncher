@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using EDennis.Samples.SharedModel;
+using System.Collections.Generic;
 
 namespace EDennis.AspNetCore.Base.Web {
 

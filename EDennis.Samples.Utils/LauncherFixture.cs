@@ -2,15 +2,15 @@
 using System;
 using System.Net.Http;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace EDennis.Samples.Utils {
 
     /// <summary>
     /// Xunit class fixture used to launch and terminate a web server for integration testing
     /// </summary>
-    public class LauncherFixture<TProgram> : IDisposable 
+    public class LauncherFixture<TProgram,TLauncher> : IDisposable 
         where TProgram : IProgram, new()
+        where TLauncher : ILauncher, new()
         {
 
         //the threading mechanism used to remotely terminate launcher apps
@@ -33,6 +33,8 @@ namespace EDennis.Samples.Utils {
             var arg = $"ewh={Guid.NewGuid().ToString()}";
             _ewh = new EventWaitHandle(false, EventResetMode.ManualReset, arg);
 
+            var launcher = new TLauncher();
+
             Program = new TProgram();
 
             //create the HttpClient
@@ -41,7 +43,7 @@ namespace EDennis.Samples.Utils {
             };
 
             //asynchronously initiate the launch of the server 
-            Program.Run(new string[] { arg });
+            launcher.Launch(new string[] { arg });
 
             //optional : use custom PingAsync (see HttpClientExtensions) to wait for server to start.
             var canPing = HttpClient.PingAsync(10).Result;
