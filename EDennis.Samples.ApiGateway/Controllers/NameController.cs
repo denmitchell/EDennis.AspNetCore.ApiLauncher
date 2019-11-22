@@ -27,8 +27,8 @@ namespace EDennis.Samples.ApiGateway.Controllers {
 
         [HttpGet]
         public IEnumerable<Name> Get() {
-            _logger.LogInformation("For Api Gateway, retrieving Names from NameApi @ {NameApiUrl}", _httpClient.BaseAddress.ToString());
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Name").Result;
+            _logger.LogInformation("For Api Gateway, retrieving Names from NameApi @ {NameApiUrl}", $"{_httpClient.BaseAddress.ToString()}Name");
+            var response = _httpClient.GetAsync("Name").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var Name = JsonSerializer.Deserialize<List<Name>>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
@@ -38,8 +38,8 @@ namespace EDennis.Samples.ApiGateway.Controllers {
 
         [HttpGet("{id}")]
         public Name Get(int id) {
-            _logger.LogInformation("For Api Gateway, retrieving Name from NameApi @ {NameApiUrl}", $"{_httpClient.BaseAddress.ToString()}/{id}");
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Name/{id}").Result;
+            _logger.LogInformation("For Api Gateway, retrieving Name from NameApi @ {NameApiUrl}", $"{_httpClient.BaseAddress.ToString()}Name/{id}");
+            var response = _httpClient.GetAsync($"Name/{id}").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var Name = JsonSerializer.Deserialize<Name>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });

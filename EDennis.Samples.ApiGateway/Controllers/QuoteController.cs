@@ -28,8 +28,8 @@ namespace EDennis.Samples.ApiGateway.Controllers {
 
         [HttpGet]
         public IEnumerable<Quote> Get() {
-            _logger.LogInformation("For Api Gateway, retrieving Quotes from QuoteApi @ {QuoteApiUrl}", _httpClient.BaseAddress.ToString());
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Quote").Result;
+            _logger.LogInformation("For Api Gateway, retrieving Quotes from QuoteApi @ {QuoteApiUrl}", $"{_httpClient.BaseAddress.ToString()}/Quote");
+            var response = _httpClient.GetAsync($"Quote").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var Quote = JsonSerializer.Deserialize<List<Quote>>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
@@ -39,8 +39,8 @@ namespace EDennis.Samples.ApiGateway.Controllers {
 
         [HttpGet("{id}")]
         public Quote Get(int id) {
-            _logger.LogInformation("For Api Gateway, retrieving Quote from QuoteApi @ {QuoteApiUrl}", $"{_httpClient.BaseAddress.ToString()}/{id}");
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Quote/{id}").Result;
+            _logger.LogInformation("For Api Gateway, retrieving Quote from QuoteApi @ {QuoteApiUrl}", $"{_httpClient.BaseAddress.ToString()}Quote/{id}");
+            var response = _httpClient.GetAsync($"Quote/{id}").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var Quote = JsonSerializer.Deserialize<Quote>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });

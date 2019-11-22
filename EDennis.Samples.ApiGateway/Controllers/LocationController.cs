@@ -27,8 +27,8 @@ namespace EDennis.Samples.ApiGateway.Controllers {
 
         [HttpGet]
         public IEnumerable<Location> Get() {
-            _logger.LogInformation("For Api Gateway, retrieving Locations from LocationApi @ {LocationApiUrl}", _httpClient.BaseAddress.ToString());
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Location").Result;
+            _logger.LogInformation("For Api Gateway, retrieving Locations from LocationApi @ {LocationApiUrl}", $"{_httpClient.BaseAddress.ToString()}Location");
+            var response = _httpClient.GetAsync("Location").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var location = JsonSerializer.Deserialize<List<Location>>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
@@ -38,8 +38,8 @@ namespace EDennis.Samples.ApiGateway.Controllers {
 
         [HttpGet("{id}")]
         public Location Get(int id) {
-            _logger.LogInformation("For Api Gateway, retrieving Location from LocationApi @ {LocationApiUrl}", $"{_httpClient.BaseAddress.ToString()}/{id}");
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Location/{id}").Result;
+            _logger.LogInformation("For Api Gateway, retrieving Location from LocationApi @ {LocationApiUrl}", $"{_httpClient.BaseAddress.ToString()}Location/{id}");
+            var response = _httpClient.GetAsync($"Location/{id}").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var location = JsonSerializer.Deserialize<Location>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });

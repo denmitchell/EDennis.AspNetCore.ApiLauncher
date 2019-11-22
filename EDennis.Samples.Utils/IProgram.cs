@@ -10,7 +10,7 @@ namespace EDennis.AspNetCore.Base.Web {
         IConfiguration Configuration { get; }
         Type Startup { get; }
         bool UsesEmbeddedConfigurationFiles { get; }
-        bool UsesSharedConfigurationFile { get; }
+        bool UsesLauncherConfigurationFile { get; }
 
         IHostBuilder CreateHostBuilder(string[] args);
         IProgram Run(string[] args);

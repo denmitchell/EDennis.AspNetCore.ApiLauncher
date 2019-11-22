@@ -41,8 +41,8 @@ namespace EDennis.AspNetCore.Base.Web {
                     config.AddJsonFile($"appsettings.json", true, true);
                     config.AddJsonFile($"appsettings.{env}.json", true, true);
                 }
-                if (UsesSharedConfigurationFile)
-                    config.AddJsonFile($"appsettings.Shared.json", true, true);
+                if (UsesLauncherConfigurationFile)
+                    config.AddJsonFile($"appsettings.Launcher.json", true, true);
 
                 config.AddEnvironmentVariables()
                     .AddCommandLine(new string[] { $"ASPNETCORE_ENVIRONMENT={env}" });
@@ -51,7 +51,7 @@ namespace EDennis.AspNetCore.Base.Web {
             }
         }
         public virtual bool UsesEmbeddedConfigurationFiles { get; } = true;
-        public virtual bool UsesSharedConfigurationFile { get; } = true;
+        public virtual bool UsesLauncherConfigurationFile { get; } = true;
         public virtual string ApisConfigurationSection { get; } = "Apis";
         public abstract Type Startup { get; }
 
@@ -88,7 +88,6 @@ namespace EDennis.AspNetCore.Base.Web {
 
 
         public IHostBuilder CreateHostBuilder(string[] args) {
-
             var builder = Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder => {
                     var urls = Api.Urls;

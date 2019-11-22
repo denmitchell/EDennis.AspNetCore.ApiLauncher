@@ -28,8 +28,8 @@ namespace EDennis.Samples.ApiGateway.Controllers {
 
         [HttpGet]
         public Time Get() {
-            _logger.LogInformation("For Api Gateway, retrieving Time from TimeApi @ {TimeApiUrl}", _httpClient.BaseAddress.ToString());
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Time").Result;
+            _logger.LogInformation("For Api Gateway, retrieving Time from TimeApi @ {TimeApiUrl}", $"{_httpClient.BaseAddress.ToString()}Time");
+            var response = _httpClient.GetAsync($"Time").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var time = JsonSerializer.Deserialize<Time>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });

@@ -52,7 +52,7 @@ namespace EDennis.Samples.LocationApi.Controllers {
 
         private Time GetTime() {
             _logger.LogInformation("For Name Api, retrieving Time from TimeApi @ {TimeApiUrl}", _httpClient.BaseAddress.ToString());
-            var response = _httpClient.GetAsync($"{_httpClient.BaseAddress}Time").Result;
+            var response = _httpClient.GetAsync("Time").Result;
             var content = response.Content.ReadAsStringAsync().Result;
             var time = JsonSerializer.Deserialize<Time>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
