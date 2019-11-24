@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System.Net.Http;
 
 namespace EDennis.Samples.QuoteApi.Scaffolded {
     public class Startup {
@@ -23,7 +24,7 @@ namespace EDennis.Samples.QuoteApi.Scaffolded {
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
             services.Configure<Apis>(Configuration.GetSection("Apis"));
-            services.AddHttpClient();
+            services.AddHttpClient("TimeApi");
             services.AddControllers();
         }
 

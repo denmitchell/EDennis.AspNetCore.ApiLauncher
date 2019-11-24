@@ -28,7 +28,7 @@ namespace EDennis.Samples.QuoteApi.Scaffolded.Controllers {
             IHttpClientFactory httpClientFactory,
             IOptionsMonitor<Apis> apis) {
             _logger = logger;
-            _httpClient = httpClientFactory.CreateClient();
+            _httpClient = httpClientFactory.CreateClient("TimeApi");
             var api = apis.CurrentValue.FirstOrDefault(a => a.Value.ProjectName == "EDennis.Samples.TimeApi.Scaffolded").Value;
             _httpClient.BaseAddress = new Uri(api.MainAddress);
         }

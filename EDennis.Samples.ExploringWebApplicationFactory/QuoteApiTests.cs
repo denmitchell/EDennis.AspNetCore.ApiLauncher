@@ -67,7 +67,6 @@ namespace EDennis.Samples.ExploringWebApplicationFactory {
                 var quotes = (List<Quote>)quoteResult.Value;
             });
 
-            var timeServerAddress = _timeFactory.Server.BaseAddress.ToString();
         }
     }
 }
