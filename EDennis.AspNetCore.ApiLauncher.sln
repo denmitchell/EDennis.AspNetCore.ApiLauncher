@@ -41,13 +41,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.QuoteApi.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.TimeApi.Host", "EDennis.Samples.TimeApi.Host\EDennis.Samples.TimeApi.Host.csproj", "{05733EE2-059C-4A5C-94AF-CCCAB1EC80BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.QuoteApi.Host", "EDennis.Samples.QuoteApi.Host\EDennis.Samples.QuoteApi.Host.csproj", "{611941EE-D312-488D-83D5-B806B3D2CED1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.QuoteApi.Host", "EDennis.Samples.QuoteApi.Host\EDennis.Samples.QuoteApi.Host.csproj", "{611941EE-D312-488D-83D5-B806B3D2CED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.NameApi.Host", "EDennis.Samples.NameApi.Host\EDennis.Samples.NameApi.Host.csproj", "{3B8459A5-F70E-4C37-AED5-94E8E33395E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.NameApi.Host", "EDennis.Samples.NameApi.Host\EDennis.Samples.NameApi.Host.csproj", "{3B8459A5-F70E-4C37-AED5-94E8E33395E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.LocationApi.Host", "EDennis.Samples.LocationApi.Host\EDennis.Samples.LocationApi.Host.csproj", "{E0E4F315-591B-4AF8-9D06-8F3FEEAAE3DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.LocationApi.Host", "EDennis.Samples.LocationApi.Host\EDennis.Samples.LocationApi.Host.csproj", "{E0E4F315-591B-4AF8-9D06-8F3FEEAAE3DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.ApiGateway.Host", "EDennis.Samples.ApiGateway.Host\EDennis.Samples.ApiGateway.Host.csproj", "{765B28B7-9492-4288-9C8A-27747BFAC353}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.ApiGateway.Host", "EDennis.Samples.ApiGateway.Host\EDennis.Samples.ApiGateway.Host.csproj", "{765B28B7-9492-4288-9C8A-27747BFAC353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.ExploringWebApplicationFactory", "EDennis.Samples.ExploringWebApplicationFactory\EDennis.Samples.ExploringWebApplicationFactory.csproj", "{C0C6EA83-DEB2-4711-A897-1ED821A8F293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.TimeApi.Scaffolded", "EDennis.Samples.TimeApi.Scaffolded\EDennis.Samples.TimeApi.Scaffolded.csproj", "{DF995C4F-DF9D-4946-9E3A-04878062071E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDennis.Samples.QuoteApi.Scaffolded", "EDennis.Samples.QuoteApi.Scaffolded\EDennis.Samples.QuoteApi.Scaffolded.csproj", "{D93B63F6-72EF-49A0-A926-05E137202AE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +153,18 @@ Global
 		{765B28B7-9492-4288-9C8A-27747BFAC353}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{765B28B7-9492-4288-9C8A-27747BFAC353}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{765B28B7-9492-4288-9C8A-27747BFAC353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C6EA83-DEB2-4711-A897-1ED821A8F293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C6EA83-DEB2-4711-A897-1ED821A8F293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C6EA83-DEB2-4711-A897-1ED821A8F293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C6EA83-DEB2-4711-A897-1ED821A8F293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF995C4F-DF9D-4946-9E3A-04878062071E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF995C4F-DF9D-4946-9E3A-04878062071E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF995C4F-DF9D-4946-9E3A-04878062071E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF995C4F-DF9D-4946-9E3A-04878062071E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93B63F6-72EF-49A0-A926-05E137202AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93B63F6-72EF-49A0-A926-05E137202AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93B63F6-72EF-49A0-A926-05E137202AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93B63F6-72EF-49A0-A926-05E137202AE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
