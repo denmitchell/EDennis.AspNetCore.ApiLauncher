@@ -1,20 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using EDennis.Samples.SharedModel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System.Net.Http;
+using IStartup = EDennis.AspNetCore.Base.Web.IStartup;
 
 namespace EDennis.Samples.QuoteApi.Scaffolded {
-    public class Startup {
+    public class Startup : IStartup {
         public Startup(IConfiguration configuration) {
             Configuration = configuration;
         }

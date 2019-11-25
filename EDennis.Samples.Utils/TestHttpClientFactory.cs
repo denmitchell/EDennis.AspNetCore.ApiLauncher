@@ -1,17 +1,21 @@
 ﻿using EDennis.AspNetCore.Base.Web;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 
 namespace EDennis.AspNetCore.Base.Testing {
 
-    public class TestHttpClientFactory<IStartup> : IHttpClientFactory
-        where IStartup : class {
+    public class TestHttpClientFactory : IHttpClientFactory {
 
-        public Dictionary<string, TestApiFactory<IStartup>> FactoryDictionary { get; set; }
+        private readonly Dictionary<string, Func<HttpClient>> _factory;
+
+        public TestHttpClientFactory(Dictionary<string, Func<HttpClient>> factory) {
+            _factory = factory;
+        }
 
 
         public HttpClient CreateClient(string name) {
-            return FactoryDictionary[name].CreateClient();
+            return _factory[name]();
         }
     }
 }
