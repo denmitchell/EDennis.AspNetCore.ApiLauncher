@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace EDennis.Samples.QuoteApi.Scaffolded.Tester {
+namespace EDennis.Samples.NameApi.Scaffolded.Tester {
     public class SampleUnitTest : 
         IClassFixture<TestApis>{
 
@@ -34,14 +34,14 @@ namespace EDennis.Samples.QuoteApi.Scaffolded.Tester {
 
 
         [Fact]
-        public void TestQuoteApi() {
+        public void TestNameApi() {
 
-            var quoteClient = _factory.CreateClient["QuoteApi"]();
-            var quoteResult = quoteClient.Get<List<Quote>>($"Quote");
-            var quotes = (List<Quote>)quoteResult.Value;
-            if (quotes == null)
-                throw new ApplicationException($"Cannot retrieve quotes from endpoint: {quoteClient.BaseAddress}Quote");
-
+            var nameClient = _factory.CreateClient["NameApi"]();
+            var nameResult = nameClient.Get<List<Name>>($"Name");
+            var names = (List<Name>)nameResult.Value;
+            if (names == null)
+                throw new ApplicationException($"Cannot retrieve names from endpoint: {nameClient.BaseAddress}Name");
         }
+
     }
 }

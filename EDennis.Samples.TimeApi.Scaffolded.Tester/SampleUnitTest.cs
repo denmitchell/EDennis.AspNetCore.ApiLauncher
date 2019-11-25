@@ -21,10 +21,8 @@ namespace EDennis.Samples.TimeApi.Scaffolded.Tester {
 
 
         [Fact]
-        public void Test1() {
+        public void TestTimeApi() {
 
-            //Query the time API.  This works just fine because you are using
-            //  the test server's own client to access the test server 
             var timeClient = _factory.CreateClient["TimeApi"]();
             var timeResult = timeClient.Get<Time>("Time");
             var time = (Time)timeResult.Value;
