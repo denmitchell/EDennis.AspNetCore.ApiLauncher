@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System;
 
-namespace EDennis.Samples.LocationApi.Scaffolded.Tester {
+namespace EDennis.Samples.LocationApi.Tester {
     public class TestApis : TestApisBase {
         public override Type[] StartupTypes => 
             new Type[] { 

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System;
 
-namespace EDennis.Samples.NameApi.Scaffolded.Tester {
+namespace EDennis.Samples.NameApi.Tester {
     public class TestApis : TestApisBase {
         public override Type[] StartupTypes => 
             new Type[] { 

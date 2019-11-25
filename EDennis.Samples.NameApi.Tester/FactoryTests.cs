@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace EDennis.Samples.NameApi.Scaffolded.Tester {
+namespace EDennis.Samples.NameApi.Tester {
     public class FactoryTests : 
         IClassFixture<TestApis>{
 
