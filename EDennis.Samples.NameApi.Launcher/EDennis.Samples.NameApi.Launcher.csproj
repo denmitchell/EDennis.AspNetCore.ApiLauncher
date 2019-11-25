@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EDennis.Samples.NameApi\EDennis.Samples.NameApi.csproj" />
-    <ProjectReference Include="..\EDennis.Samples.TimeApi\EDennis.Samples.TimeApi.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.NameApi.Lib\EDennis.Samples.NameApi.Lib.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.TimeApi.Lib\EDennis.Samples.TimeApi.Lib.csproj" />
     <ProjectReference Include="..\EDennis.Samples.Utils\EDennis.Samples.Utils.csproj" />
   </ItemGroup>
 

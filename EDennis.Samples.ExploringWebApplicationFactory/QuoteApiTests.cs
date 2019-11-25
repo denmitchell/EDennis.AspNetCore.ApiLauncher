@@ -1,28 +1,27 @@
 using EDennis.Samples.SharedModel;
-using T = EDennis.Samples.TimeApi.Scaffolded;
-using Q = EDennis.Samples.QuoteApi.Scaffolded;
 using EDennis.Samples.Utils;
 using Microsoft.AspNetCore.Mvc.Testing;
 using System;
-using System.Text.Json;
-using Xunit;
-using Xunit.Abstractions;
 using System.Collections.Generic;
 using System.Net.Http;
+using Xunit;
+using Xunit.Abstractions;
+using Q = EDennis.Samples.QuoteApi;
+using T = EDennis.Samples.TimeApi;
 
 namespace EDennis.Samples.ExploringWebApplicationFactory {
     public class QuoteApiTests : 
-        IClassFixture<TimeApiWebApplicationFactory<T.Startup>>,
-        IClassFixture<QuoteApiWebApplicationFactory<Q.Startup>>{
+        IClassFixture<TimeApiWebApplicationFactory<T.Program>>,
+        IClassFixture<QuoteApiWebApplicationFactory<Q.Program>>{
 
 
-        private readonly TimeApiWebApplicationFactory<T.Startup> _timeFactory;
-        private readonly QuoteApiWebApplicationFactory<Q.Startup> _quoteFactory;
+        private readonly TimeApiWebApplicationFactory<T.Program> _timeFactory;
+        private readonly QuoteApiWebApplicationFactory<Q.Program> _quoteFactory;
 
         private readonly ITestOutputHelper _output;
         public QuoteApiTests(
-            TimeApiWebApplicationFactory<T.Startup> timeFactory,
-            QuoteApiWebApplicationFactory<Q.Startup> quoteFactory,
+            TimeApiWebApplicationFactory<T.Program> timeFactory,
+            QuoteApiWebApplicationFactory<Q.Program> quoteFactory,
             ITestOutputHelper output) {
             _timeFactory = timeFactory;
             _quoteFactory = quoteFactory;

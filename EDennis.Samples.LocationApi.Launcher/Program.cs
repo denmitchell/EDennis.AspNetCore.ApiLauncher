@@ -1,7 +1,7 @@
 ﻿using EDennis.AspNetCore.Base.Web;
 using EDennis.Samples.Utils;
-using L = EDennis.Samples.LocationApi;
-using T = EDennis.Samples.TimeApi;
+using L = EDennis.Samples.LocationApi.Lib;
+using T = EDennis.Samples.TimeApi.Lib;
 
 namespace EDennis.Samples.LocationApi.Launcher {
     public class Program : ILauncher {

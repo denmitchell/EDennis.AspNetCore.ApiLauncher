@@ -1,19 +1,18 @@
 using EDennis.Samples.SharedModel;
-using EDennis.Samples.TimeApi.Scaffolded;
+using EDennis.Samples.TimeApi;
 using EDennis.Samples.Utils;
-using Microsoft.AspNetCore.Mvc.Testing;
 using System;
 using System.Text.Json;
 using Xunit;
 using Xunit.Abstractions;
 
 namespace EDennis.Samples.ExploringWebApplicationFactory {
-    public class TimeApiTests : IClassFixture<TimeApiWebApplicationFactory<Startup>> {
+    public class TimeApiTests : IClassFixture<TimeApiWebApplicationFactory<Program>> {
 
 
-        private readonly TimeApiWebApplicationFactory<Startup> _factory;
+        private readonly TimeApiWebApplicationFactory<Program> _factory;
         private readonly ITestOutputHelper _output;
-        public TimeApiTests(TimeApiWebApplicationFactory<Startup> factory, ITestOutputHelper output) {
+        public TimeApiTests(TimeApiWebApplicationFactory<Program> factory, ITestOutputHelper output) {
             _factory = factory;
             _output = output;
         }

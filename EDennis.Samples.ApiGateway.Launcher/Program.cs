@@ -1,12 +1,10 @@
 ﻿using EDennis.AspNetCore.Base.Web;
 using EDennis.Samples.Utils;
-using System;
-using System.Threading.Tasks;
-using G = EDennis.Samples.ApiGateway;
-using L = EDennis.Samples.LocationApi;
-using N = EDennis.Samples.NameApi;
-using Q = EDennis.Samples.QuoteApi;
-using T = EDennis.Samples.TimeApi;
+using G = EDennis.Samples.ApiGateway.Lib;
+using L = EDennis.Samples.LocationApi.Lib;
+using N = EDennis.Samples.NameApi.Lib;
+using Q = EDennis.Samples.QuoteApi.Lib;
+using T = EDennis.Samples.TimeApi.Lib;
 
 namespace EDennis.Samples.ApiGateway.Launcher {
     public class Program : ILauncher {

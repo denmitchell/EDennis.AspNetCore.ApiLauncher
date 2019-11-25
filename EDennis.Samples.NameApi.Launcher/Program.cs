@@ -1,7 +1,7 @@
 ﻿using EDennis.AspNetCore.Base.Web;
 using EDennis.Samples.Utils;
-using N = EDennis.Samples.NameApi;
-using T = EDennis.Samples.TimeApi;
+using N = EDennis.Samples.NameApi.Lib;
+using T = EDennis.Samples.TimeApi.Lib;
 
 namespace EDennis.Samples.NameApi.Launcher {
     public class Program : ILauncher {

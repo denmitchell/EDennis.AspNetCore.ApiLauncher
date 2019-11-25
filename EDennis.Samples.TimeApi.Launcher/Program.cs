@@ -1,7 +1,6 @@
 ﻿using EDennis.AspNetCore.Base.Web;
 using EDennis.Samples.Utils;
-using System.Threading.Tasks;
-using T = EDennis.Samples.TimeApi;
+using T = EDennis.Samples.TimeApi.Lib;
 
 namespace EDennis.Samples.TimeApi.Launcher {
 

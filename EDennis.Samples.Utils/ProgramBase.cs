@@ -61,16 +61,16 @@ namespace EDennis.AspNetCore.Base.Web {
 
             var apis = new Apis();
             var config = Configuration;
-            var assemblyName = GetType().Assembly.GetName().Name;
+            var projectName = GetType().Assembly.GetName().Name.Replace(".Lib","");
             try {
                 config.GetSection(ApisConfigurationSection).Bind(apis);
             } catch (Exception) {
                 throw new ApplicationException($"Cannot bind to {ApisConfigurationSection} in Configuration.");
             }
             try {
-                Api = apis.FirstOrDefault(a => a.Value.ProjectName == assemblyName).Value;
+                Api = apis.FirstOrDefault(a => a.Value.ProjectName == projectName).Value;
             } catch (Exception) {
-                throw new ApplicationException($"Cannot bind to {ApisConfigurationSection}:{assemblyName} in Configuration.");
+                throw new ApplicationException($"Cannot bind to {ApisConfigurationSection}:{projectName} in Configuration.");
             }
 
         }

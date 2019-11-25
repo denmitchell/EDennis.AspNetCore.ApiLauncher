@@ -26,7 +26,7 @@ namespace EDennis.AspNetCore.Base.Testing {
             _apisConfigurationKey = apisConfigurationKey;
 
             var projName = typeof(TEntryPoint).Assembly.GetName().Name;
-            var apiKey = apis.FirstOrDefault(a => a.Value.ProjectName == projName).Key;
+            var apiKey = apis.FirstOrDefault(a => projName.StartsWith(a.Value.ProjectName)).Key;
             create.Add(apiKey, CreateClient);
             dispose.Add(apiKey, Dispose);
 

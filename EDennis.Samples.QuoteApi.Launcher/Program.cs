@@ -1,7 +1,7 @@
 ﻿using EDennis.AspNetCore.Base.Web;
 using EDennis.Samples.Utils;
-using Q = EDennis.Samples.QuoteApi;
-using T = EDennis.Samples.TimeApi;
+using Q = EDennis.Samples.QuoteApi.Lib;
+using T = EDennis.Samples.TimeApi.Lib;
 
 namespace EDennis.Samples.QuoteApi.Launcher {
     public class Program : ILauncher {
