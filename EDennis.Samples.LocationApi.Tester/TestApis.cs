@@ -4,7 +4,7 @@ using System;
 
 namespace EDennis.Samples.LocationApi.Tester {
     public class TestApis : TestApisBase {
-        public override Type[] StartupTypes => 
+        public override Type[] EntryPoints => 
             new Type[] { 
                 typeof(TimeApi.Program),
                 typeof(Program)

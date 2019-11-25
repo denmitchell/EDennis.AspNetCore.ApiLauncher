@@ -2,9 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using IStartup = EDennis.AspNetCore.Base.Web.IStartup;
 
 namespace EDennis.AspNetCore.Base.Testing {
 
@@ -16,7 +14,7 @@ namespace EDennis.AspNetCore.Base.Testing {
         protected Dictionary<string, Action> _dispose
             = new Dictionary<string, Action>();
 
-        public abstract Type[] StartupTypes { get; }
+        public abstract Type[] EntryPoints { get; }
         
         public virtual IConfiguration Configuration { 
             get {
@@ -37,7 +35,7 @@ namespace EDennis.AspNetCore.Base.Testing {
             Configuration.GetSection(ApisConfigurationKey).Bind(Apis);
 
             //now populate the dictionary with TestApi instances
-            foreach (var type in StartupTypes) {
+            foreach (var type in EntryPoints) {
                 Type[] typeParams = new Type[] { type };
                 Type classType = typeof(TestApi<>);
                 Type constructedType = classType.MakeGenericType(typeParams);
