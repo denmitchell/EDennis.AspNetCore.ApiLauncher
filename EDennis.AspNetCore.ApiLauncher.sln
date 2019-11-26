@@ -51,6 +51,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.ApiGateway.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EDennis.Samples.ApiGateway", "EDennis.Samples.ApiGateway\EDennis.Samples.ApiGateway.csproj", "{C12F32BF-E148-4DB7-B2C3-22595AC91566}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1CD491FC-E0C1-485C-961D-24742C4EBA79}"
+	ProjectSection(SolutionItems) = preProject
+		doc\FactoryPattern.PNG = doc\FactoryPattern.PNG
+		doc\LauncherPattern.PNG = doc\LauncherPattern.PNG
+		doc\ProjectSplitStep1.PNG = doc\ProjectSplitStep1.PNG
+		doc\ProjectSplitStep1b.PNG = doc\ProjectSplitStep1b.PNG
+		doc\ProjectSplitStep2.PNG = doc\ProjectSplitStep2.PNG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
