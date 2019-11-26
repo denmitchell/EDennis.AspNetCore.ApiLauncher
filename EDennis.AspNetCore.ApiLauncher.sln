@@ -54,11 +54,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1CD491FC-E0C1-485C-961D-24742C4EBA79}"
 	ProjectSection(SolutionItems) = preProject
 		doc\FactoryPattern.PNG = doc\FactoryPattern.PNG
+		doc\FactoryPattern.svg = doc\FactoryPattern.svg
 		doc\LauncherPattern.PNG = doc\LauncherPattern.PNG
+		doc\LauncherPattern.svg = doc\LauncherPattern.svg
 		doc\ProjectSplitStep1.PNG = doc\ProjectSplitStep1.PNG
 		doc\ProjectSplitStep1.svg = doc\ProjectSplitStep1.svg
 		doc\ProjectSplitStep1a.PNG = doc\ProjectSplitStep1a.PNG
+		doc\ProjectSplitStep1a.svg = doc\ProjectSplitStep1a.svg
 		doc\ProjectSplitStep2.PNG = doc\ProjectSplitStep2.PNG
+		doc\ProjectSplitStep2.svg = doc\ProjectSplitStep2.svg
 	EndProjectSection
 EndProject
 Global
