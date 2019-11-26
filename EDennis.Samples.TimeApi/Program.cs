@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using T = EDennis.Samples.TimeApi.Lib;
 
 namespace EDennis.Samples.TimeApi {
     public class Program {
@@ -10,7 +9,7 @@ namespace EDennis.Samples.TimeApi {
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            new T.Program().CreateHostBuilder(args);
+            new Lib.Program().CreateHostBuilder(args);
 
     }
 }

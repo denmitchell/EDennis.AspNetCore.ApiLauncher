@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using L = EDennis.Samples.LocationApi.Lib;
 
 namespace EDennis.Samples.LocationApi {
     public class Program {
@@ -9,6 +8,6 @@ namespace EDennis.Samples.LocationApi {
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            new L.Program().CreateHostBuilder(args);
+            new Lib.Program().CreateHostBuilder(args);
     }
 }

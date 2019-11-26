@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using G = EDennis.Samples.ApiGateway.Lib;
 
 namespace EDennis.Samples.ApiGateway {
     public class Program {
@@ -9,6 +8,6 @@ namespace EDennis.Samples.ApiGateway {
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            new G.Program().CreateHostBuilder(args);
+            new Lib.Program().CreateHostBuilder(args);
     }
 }
