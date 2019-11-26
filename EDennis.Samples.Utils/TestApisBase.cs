@@ -14,35 +14,19 @@ namespace EDennis.AspNetCore.Base.Testing {
         protected Dictionary<string, Action> _dispose
             = new Dictionary<string, Action>();
 
-        public abstract Type[] EntryPoints { get; }
+        public abstract Dictionary<string,Type> EntryPoints { get; }
         
-        public virtual IConfiguration Configuration { 
-            get {
-                var configuration = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.Development.json")
-                    .Build();
-                return configuration;
-            }
-        }
-
-        public virtual string ApisConfigurationKey { get; } = "Apis";
-
-        public Apis Apis { get; }
-
         public TestApisBase() {
 
-            Apis = new Apis();
-            Configuration.GetSection(ApisConfigurationKey).Bind(Apis);
-
             //now populate the dictionary with TestApi instances
-            foreach (var type in EntryPoints) {
-                Type[] typeParams = new Type[] { type };
+            foreach (var httpClientName in EntryPoints.Keys) {
+                Type[] typeParams = new Type[] { EntryPoints[httpClientName] };
                 Type classType = typeof(TestApi<>);
                 Type constructedType = classType.MakeGenericType(typeParams);
 
-                var testApi = 
+                var _ = 
                     Activator.CreateInstance(constructedType, 
-                        new object[] { CreateClient, _dispose, Configuration, ApisConfigurationKey, Apis });
+                        new object[] { CreateClient, _dispose, httpClientName });
             }
 
         }

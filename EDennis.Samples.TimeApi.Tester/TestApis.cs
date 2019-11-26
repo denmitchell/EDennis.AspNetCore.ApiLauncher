@@ -1,15 +1,13 @@
 ﻿using EDennis.AspNetCore.Base.Testing;
 using Microsoft.Extensions.Configuration;
 using System;
+using System.Collections.Generic;
 
 namespace EDennis.Samples.TimeApi.Tester {
     public class TestApis : TestApisBase {
-        public override Type[] EntryPoints => 
-            new Type[] { 
-                typeof(Program)
+        public override Dictionary<string, Type> EntryPoints =>
+            new Dictionary<string, Type> {
+                {"TimeApi", typeof(TimeApi.Program) }
             };
-
-        public override IConfiguration Configuration =>
-            new Lib.Program().Configuration;
     }
 }

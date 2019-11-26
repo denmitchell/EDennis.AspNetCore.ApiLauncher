@@ -14,30 +14,22 @@ namespace EDennis.AspNetCore.Base.Testing {
         where TEntryPoint : class {
 
         private readonly Dictionary<string, Func<HttpClient>> _create;
-        private readonly IConfiguration _configuration;
-        private readonly string _apisConfigurationKey;
 
         public TestApi(Dictionary<string, Func<HttpClient>> create,
-            Dictionary<string,Action> dispose,
-            IConfiguration configuration, string apisConfigurationKey,
-            Apis apis) {
+            Dictionary<string, Action> dispose, string httpClientName) {
             _create = create;
-            _configuration = configuration;
-            _apisConfigurationKey = apisConfigurationKey;
 
-            var projName = typeof(TEntryPoint).Assembly.GetName().Name;
-            var apiKey = apis.FirstOrDefault(a => projName.StartsWith(a.Value.ProjectName)).Key;
-            create.Add(apiKey, CreateClient);
-            dispose.Add(apiKey, Dispose);
+            create.Add(httpClientName, CreateClient);
+            dispose.Add(httpClientName, Dispose);
 
             var _ = Server; //ensure creation;
-
         }
+
+
 
         protected override void ConfigureWebHost(IWebHostBuilder builder) {
 
             builder.ConfigureServices(services => {
-                services.Configure<Apis>(_configuration.GetSection(_apisConfigurationKey));
 
                 services.AddScoped<IHttpClientFactory>(provider => {
                     return new TestHttpClientFactory(_create);
