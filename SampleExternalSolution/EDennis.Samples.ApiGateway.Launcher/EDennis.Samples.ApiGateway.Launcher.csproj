@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EDennis.Samples.ApiGateway.Lib" Version="1.0.0" />
+    <PackageReference Include="EDennis.Samples.LocationApi.Lib" Version="1.0.1" />
+    <PackageReference Include="EDennis.Samples.NameApi.Lib" Version="1.0.0" />
+    <PackageReference Include="EDennis.Samples.QuoteApi.Lib" Version="1.0.0" />
+    <PackageReference Include="EDennis.Samples.TimeApi.Lib" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

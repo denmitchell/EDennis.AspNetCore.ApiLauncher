@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EDennis.Samples.ApiGateway.Lib" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EDennis.Samples.ApiGateway.LauncherAlt\EDennis.Samples.ApiGateway.LauncherAlt.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.ApiGateway.Launcher\EDennis.Samples.ApiGateway.Launcher.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.ApiGateway\EDennis.Samples.ApiGateway.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.LocationApi\EDennis.Samples.LocationApi.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.NameApi\EDennis.Samples.NameApi.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.QuoteApi\EDennis.Samples.QuoteApi.csproj" />
+    <ProjectReference Include="..\EDennis.Samples.TimeApi\EDennis.Samples.TimeApi.csproj" />
+  </ItemGroup>
+
+</Project>
