@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EDennis.Samples.ApiGateway.LauncherAlt\EDennis.Samples.ApiGateway.LauncherAlt.csproj" />
     <ProjectReference Include="..\EDennis.Samples.ApiGateway.Launcher\EDennis.Samples.ApiGateway.Launcher.csproj" />
     <ProjectReference Include="..\EDennis.Samples.ApiGateway.Lib\EDennis.Samples.ApiGateway.Lib.csproj" />
     <ProjectReference Include="..\EDennis.Samples.ApiGateway\EDennis.Samples.ApiGateway.csproj" />

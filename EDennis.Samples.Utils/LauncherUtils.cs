@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -6,13 +7,14 @@ using System.Threading;
 namespace EDennis.Samples.Utils {
     public static class LauncherUtils {
 
+        static Regex pattern = new Regex("(?<=ewh[= ])[A-Za-z0-9\\-]+");
+
         /// <summary>
         /// Non-interactive mode blocking (e.g, for automated integration tests)
         /// </summary>
         /// <param name="args">arguments, one of which should be a guid event wait handle key</param>
         public static void Block(string[] args) {
             //parse ewh argument, which carries the name of the synchronization event as a GUID
-            Regex pattern = new Regex("(?<=ewh[= ])[A-Za-z0-9\\-]+");
 
             //if the ewh argument exists, create the EventWaitHandle and block on it
             foreach (var match in args.Where(a => pattern.IsMatch(a)).Select(a => pattern.Match(a))) {
@@ -34,6 +36,17 @@ namespace EDennis.Samples.Utils {
             Console.WriteLine($"{ new string('-', 60)}\nRunning until any key is pressed\n{new string('-', 60)}");
             Console.ReadKey();
         }
+
+
+        public static Dictionary<string,string> ToCommandLineArgs(this string[] args) {
+            var dict = new Dictionary<string, string>();
+            foreach(var arg in args) {
+                var item = arg.Split('=', ' ');
+                dict.Add(item[0].Replace("/","").Replace("-",""), item[^1]);
+            }
+            return dict;
+        }
+
 
 
     }

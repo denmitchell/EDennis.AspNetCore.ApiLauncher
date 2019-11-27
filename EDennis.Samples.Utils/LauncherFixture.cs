@@ -45,7 +45,7 @@ namespace EDennis.Samples.Utils {
             //asynchronously initiate the launch of the server 
             launcher.Launch(new string[] { arg });
 
-            //var canPing = HttpClient.PingAsync(10).Result;
+            var canPing = HttpClient.PingAsync(10).Result;
 
         }
 

@@ -7,6 +7,10 @@ using Q = EDennis.Samples.QuoteApi.Lib;
 using T = EDennis.Samples.TimeApi.Lib;
 
 namespace EDennis.Samples.ApiGateway.Launcher {
+
+    /// <summary>
+    /// This launcher runs all APIs from the .Lib project's Program.Run method
+    /// </summary>
     public class Program : ILauncher {
 
         public static void Main(string[] args) {
